@@ -14,6 +14,8 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+/****************************** HEADER ******************************/
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -46,3 +48,30 @@ body {
     font-size: 20px;
     color: var(--color-primary);
 }
+
+
+/****************************** HEADER ******************************/
+
+/****************************** SOBRE NÓS ******************************/
+
+/****************************** CATÁLOGO ******************************/
+
+.catalog-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.catalog-page .catalog-text {
+    text-align: center;
+    font-size: 28px;
+}
+
+.catalog-page .catalog-text p {
+    margin: 20px;
+}
+
+/****************************** CONTATO ******************************/
