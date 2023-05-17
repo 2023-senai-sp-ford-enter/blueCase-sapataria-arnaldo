@@ -1,0 +1,12 @@
+.body-page {
+    width: 100vw;
+    height: auto;
+}
+.header-page {
+    width: auto;
+    height: 15vh;
+    background-image: url(/img/banner-de-sapato.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
