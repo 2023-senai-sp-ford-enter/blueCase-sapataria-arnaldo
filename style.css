@@ -5,3 +5,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/****************************** HEADER ******************************/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.header .header-title {
+    margin-left: 50px;
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.header .navbar {
+    width: 400px;
+    margin-right: 50px;
+}
+
+.header .navbar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header .navbar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--color-primary);
+}
