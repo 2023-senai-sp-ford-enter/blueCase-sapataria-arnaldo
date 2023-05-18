@@ -1,3 +1,6 @@
+:root {
+    --color-primary: #703B1c;
+}
 * {
     margin: 0;
     padding: 0;
@@ -41,4 +44,39 @@ body {
     text-decoration: none;
     font-size: 20px;
     color: var(--color-primary);
+}
+.main-page {
+    line-height: 1.4;
+}
+.div-page {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.div-page .article-page {
+    justify-content: center;
+}
+.div-title {
+    font-size: 35px;
+    margin-left: 50px;
+    padding-top: 20px;
+    color: var(--color-primary);
+}
+.div-subtitle {
+    font-size: 25px;
+    margin-top: 20px;
+    color: var(--color-primary);
+    text-align: center;
+}
+.article-page p {
+    font-size: 20px;
+}
+.article-page {
+    margin-top: 20px;
+    width: 95%;
+    height: 50%;
+    padding: 20px;
+    color: #918d8d;
+    border-radius: 10px;
 }
