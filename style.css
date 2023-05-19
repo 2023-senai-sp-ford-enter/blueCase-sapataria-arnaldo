@@ -326,6 +326,17 @@ body {
     margin: 10px 0 10px 0;
 }
 
+.products .bags .card .text-card:last-child,
+.products .shoes .card .text-card:last-child {
+    margin-top: 10px;
+}
+
+.products .bags .card .shopping,
+.products .shoes .card .shopping {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /****************************** CONTATO ******************************/
 
