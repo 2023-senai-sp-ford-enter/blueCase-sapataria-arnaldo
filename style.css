@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
-
 :root {
     --color-primary: #703b1c;
 }
@@ -80,3 +79,37 @@ body {
 }
 
 /****************************** CONTATO ******************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: sans-serif;
+   }
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1em;
+    font: 1em sans-serif;
+    border: 1px solid;
+}
+
+label {
+    font-weight: bold;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+button {
+    background-color: rgb(250, 248, 248);
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+}
