@@ -2,6 +2,7 @@
 :root {
     --color-primary: #703b1c;
     --color-secundary: #482b1a;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -60,7 +61,6 @@ body {
     justify-content: space-around;
     width: 100%;
     height: auto;
- 
 }
 
 .philosophy-text {
@@ -72,16 +72,16 @@ body {
 .philosophy-text .philosophy-title {
     text-align: center;
     padding: 12px;
-    background-color: #897853;
     border-radius: 6px 6px 0 0;
+    background-color: #897853;
     color: #EFEFEF;
 }
 
 .philosophy-about {
     margin: 0 0 14px 0;
     padding: 18px;
-    background-color: #F8F1F1;
     border-radius: 0 0 6px 6px;
+    background-color: #F8F1F1;
 }
 
 .philosophy-about p {
@@ -113,8 +113,11 @@ body {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    border-radius: 10px 0 0 0;
     transition: all 500ms;
+}
+
+.gallery__item--1 img {
+    border-radius: 10px 0 0 0;
 }
 
 .gallery__item--1:hover {
@@ -141,6 +144,10 @@ body {
     transition: all 500ms;
 }
 
+.gallery__item--3 img {
+    border-radius: 0 10px 0 0;
+}
+
 .gallery__item--3:hover {
     scale: 1.03;
 }
@@ -165,6 +172,10 @@ body {
     transition: all 500ms;
 }
 
+.gallery__item--5 img {
+    border-radius: 0 0 0 10px;
+}
+
 .gallery__item--5:hover {
     scale: 1.03;
 }
@@ -175,6 +186,10 @@ body {
     grid-row-start: 6;
     grid-row-end: 9;
     transition: all 500ms;
+}
+
+.gallery__item--6 img {
+    border-radius: 0 0 10px 0;
 }
 
 .gallery__item--6:hover {
@@ -201,7 +216,7 @@ body {
 .about-gallery {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 4vw);
+    grid-template-rows: repeat(8, 5vw);
     grid-gap: 15px;
     width: 600px;
     height: auto;
@@ -213,19 +228,18 @@ body {
     object-fit: cover;
 }
 
-
 .shoeshop-history,
 .arnaldo-history {
-    width: 500px;
-    height: 430px;
+    width: 600px;
+    height: auto;
 }
 
 .shoeshop-history .history-title,
 .arnaldo-history .history-title {
     text-align: center;
     padding: 12px;
-    background-color: #897853;
     border-radius: 6px 6px 0 0;
+    background-color: #897853;
     color: #EFEFEF;
 }
 
@@ -251,15 +265,21 @@ body {
 
 .catalog-page {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
     margin-top: 50px;
 }
 
 .catalog-page .catalog-text {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    margin-bottom: 100px;
     font-size: 28px;
 }
 
@@ -267,9 +287,54 @@ body {
     margin: 20px;
 }
 
-.catalog-page .catalog-text .fa-solid {
+.catalog-page .catalog-text .fa-sharp {
     margin-top: 120px;
-    font-size: 80px;
+    font-size: 50px;
+    color: #482b1a;
+}
+
+.products {
+    width: 100%;
+    height: 100vh;
+}
+
+.products .bags,
+.products .shoes {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+}
+
+.products .bags .card img,
+.products .shoes .card img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    background-color: #f0f0f0;
+}   
+
+.products .bags .card .text-card,
+.products .shoes .card .text-card {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.products .bags .card .text-card p,
+.products .shoes .card .text-card p {
+    width: 200px;
+    margin: 10px 0 10px 0;
+}
+
+.products .bags .card .text-card:last-child,
+.products .shoes .card .text-card:last-child {
+    margin-top: 10px;
+}
+
+.products .bags .card .shopping,
+.products .shoes .card .shopping {
+    display: flex;
+    justify-content: space-between;
 }
 
 
