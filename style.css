@@ -12,6 +12,8 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    height: 100vh;
 }
 
 /****************************** HEADER ******************************/
@@ -55,10 +57,10 @@ body {
 
 .philosophy-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
     width: 100%;
-    height: 300px;
+    height: auto;
+ 
 }
 
 .philosophy-text {
@@ -89,6 +91,96 @@ body {
     letter-spacing: 1px;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 3.8vw);
+    grid-gap: 15px;
+    width: 600px;
+    height: 600px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+} 
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 10px 0 0 0;
+    transition: all 500ms;
+}
+
+.gallery__item--1:hover {
+    scale: 1.03;
+}
+  
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    transition: all 500ms;
+}
+
+.gallery__item--2:hover {
+    scale: 1.03;
+}
+  
+.gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    transition: all 500ms;
+}
+
+.gallery__item--3:hover {
+    scale: 1.03;
+}
+  
+.gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    transition: all 500ms;
+}
+
+.gallery__item--4:hover {
+    scale: 1.03;
+}
+  
+.gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    transition: all 500ms;
+}
+
+.gallery__item--5:hover {
+    scale: 1.03;
+}
+  
+.gallery__item--6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    transition: all 500ms;
+}
+
+.gallery__item--6:hover {
+    scale: 1.03;
+}
+
 
 /****************************** SOBRE NÓS ******************************/
 
@@ -98,7 +190,7 @@ body {
     height: auto;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 80px;
+    margin: 80px 0 -70px 0;   
 }
 
 .arnaldo-section {
@@ -106,10 +198,21 @@ body {
     flex-direction: column;
 }
 
-.arnaldo-section .fa-solid {
-    text-align: center;
-    font-size: 40px;
+.about-gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 4vw);
+    grid-gap: 15px;
+    width: 600px;
+    height: auto;
+} 
+
+.about-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
 
 .shoeshop-history,
 .arnaldo-history {
@@ -140,7 +243,6 @@ body {
     line-height: 20px;
     word-spacing: 3px;
     letter-spacing: 1px;
-
 }
 
 
