@@ -228,7 +228,7 @@ body {
     padding: 6px;
     background-color: #703b1c;
     font-size: 20px;
-    color: #fff;
+    color: #ffffff;
     border-radius: 5px;
     border: none;   
 }
@@ -240,3 +240,68 @@ body {
 .contact-section .store-local img {
     width: 700px;
 }
+
+.rodape {
+    background-color: #703b1c;
+    color: #ffffff;
+    padding: 10px;
+  }
+
+  
+  section .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  
+  .contact-form {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form {
+    padding: 8px;
+    outline: none;
+    border: 5;
+    margin-bottom: 15px;
+    font-size: 15px;
+    transition: all 0.5s;
+  }
+  
+  .contact-form:focus {
+    border-radius: 18px;
+  }
+  
+  .contact-form {
+    padding: 15px;
+    outline: none;
+    border: 1;
+    font-size: 15px;
+    margin-bottom: 15px;
+    transition: all 0.5s;
+  }
+  
+  .contact-form :focus {
+    border-radius: 16px;
+  }
+  
+  .contact-button {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid black;
+    color: black;
+    transition: all 1s;
+    margin-bottom: 20px;
+  }
+  
+  .contact-button :hover {
+    background: black;
+    color: black;
+    border-radius: 16px;
+  } 
+  
+  
+  
