@@ -31,15 +31,30 @@
     </header>
 
     <main>
-        <section class="catalog-page">
-
+        <section id="main" class="catalog-page">
             <article class="catalog-text">
                 <h1>Catálogo</h1>
-                <p>Conheça alguns dos nossos produtos</p>
-                
+                <p>Conheça alguns dos nossos produtos</p>  
+
                 <a href="#bags">
                     <i class="fa-sharp fa-solid fa-arrow-down fa-bounce"></i>
                 </a>
+
+                <nav class="catalog-navbar">
+                    <ul>
+                        <li>
+                            <a href="#bags">Bolsas</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#shoes">Sapatos</a>
+                        </li>
+                        
+                        <li>
+                            <a href="">Outros</a>
+                        </li>
+                    </ul>
+                </nav>
             </article>
             
             <section class="products">
@@ -53,7 +68,6 @@
                             </p>
 
                             <i class="fa-regular fa-heart"></i>
-                            
                         </div>
 
                         <div class="shopping">
@@ -114,9 +128,9 @@
                     </div>            
                 </article>
 
-                <article class="shoes">
+                <article id="shoes" class="shoes">
                     <div class="card">
-                        <img src="img/gallery-home/shoe-2.jpg" alt="">
+                        <img src="img/shoes-catalog/catalog-shoe-1.jpg" alt="">
 
                         <div class="text-card">
                             <p>
@@ -133,7 +147,7 @@
                     </div>
 
                     <div class="card">
-                        <img src="img/gallery-home/shoe-3.png" alt="">
+                        <img src="img/shoes-catalog/catalog-shoe-2.jpg" alt="">
 
                         <div class="text-card">
                             <p>
@@ -151,7 +165,7 @@
                     </div>
 
                     <div class="card">
-                        <img src="img/gallery-home/shoe-4.jpg" alt="">
+                        <img src="img/shoes-catalog/catalog-shoe-3.jpg" alt="">
 
                         <div class="text-card">
                             <p>
@@ -168,7 +182,7 @@
                     </div>
 
                     <div class="card">
-                        <img src="img/gallery-home/shoe-5.jpg" alt="">
+                        <img src="img/shoes-catalog/catalog-shoe-4.jpg" alt="">
 
                         <div class="text-card">
                             <p>
@@ -189,8 +203,13 @@
                     
                 </article>
             </section>
-
         </section>
+
+        <button class="button-top">
+            <a href="#main">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </button>
     </main>
 
     <script src="https://kit.fontawesome.com/02046696f9.js" crossorigin="anonymous"></script>
