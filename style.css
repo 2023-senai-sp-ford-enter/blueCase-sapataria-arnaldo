@@ -351,13 +351,15 @@ body {
     flex-direction: column;
     width: 400px;
     margin-top: 80px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #897853;
 }
 
 .contact-section .contact-form .form-title {
     text-align: center;
     margin-bottom: 20px;
     padding: 6px;
-    background-color: #703b1c;
     font-size: 26px;
     color: #fff;
     border-radius: 5px;    
@@ -366,12 +368,14 @@ body {
 .contact-section .contact-form label {
     margin-bottom: 6px;
     font-size: 22px;
+    color: #fff;
 }
 
 .contact-section .contact-form input {
     width: 100%;
     height: 30px;
     margin-bottom: 18px;
+    border: none;
     border-radius: 5px;
 }
 
@@ -379,6 +383,7 @@ body {
     width: 100%;
     height: 32px;
     margin-bottom: 18px;
+    border: none;
     border-radius: 5px;
 }
 
@@ -386,6 +391,7 @@ body {
     width: 100%;
     height: 70px;
     margin-bottom: 18px;
+    border: none;
     border-radius: 5px;
 }
 
@@ -393,11 +399,11 @@ body {
     width: 100%;
     height: 36px;
     padding: 6px;
-    background-color: #703b1c;
     font-size: 20px;
-    color: #ffffff;
     border-radius: 5px;
     border: none;   
+    background-color: var(--color-secundary);
+    color: #fff;
 }
 
 .contact-section .store-local {
@@ -406,69 +412,18 @@ body {
 
 .contact-section .store-local img {
     width: 700px;
+    border-radius: 10px 10px 0 0;
 }
 
-.rodape {
-    background-color: #703b1c;
-    color: #ffffff;
-    padding: 10px;
-  }
-
-  
-  section .contact-form {
+.contact-section .store-local .opening-hours {
     display: flex;
-    flex-direction: column;
-    width: 80%;
-  }
-  
-  .contact-form {
-    color: black;
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .contact-form {
-    padding: 8px;
-    outline: none;
-    border: 5;
-    margin-bottom: 15px;
-    font-size: 15px;
-    transition: all 0.5s;
-  }
-  
-  .contact-form:focus {
-    border-radius: 18px;
-  }
-  
-  .contact-form {
-    padding: 15px;
-    outline: none;
-    border: 1;
-    font-size: 15px;
-    margin-bottom: 15px;
-    transition: all 0.5s;
-  }
-  
-  .contact-form :focus {
-    border-radius: 16px;
-  }
-  
-  .contact-button {
-    padding: 15px;
-    cursor: pointer;
-    font-size: 16px;
-    background: transparent;
-    border: 2px solid black;
-    color: black;
-    transition: all 1s;
-    margin-bottom: 20px;
-  }
-  
-  .contact-button :hover {
-    background: black;
-    color: black;
-    border-radius: 16px;
-  } 
-  
-  
-  
+    justify-content: space-between;
+    padding: 26px;
+    border-radius: 0 0 10px 10px;
+    background-color: #897853;
+    color: #fff;
+}
+
+.contact-section .store-local .opening-hours p {
+    width: 240px;
+}
