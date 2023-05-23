@@ -316,7 +316,8 @@ body {
 }
 
 .products .bags,
-.products .shoes {
+.products .shoes,
+.products .others {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -325,7 +326,8 @@ body {
 }
 
 .products .bags .card img,
-.products .shoes .card img {
+.products .shoes .card img,
+.products .others .card img {
     width: 320px;
     height: 320px;
     object-fit: cover;
@@ -334,7 +336,8 @@ body {
 }   
 
 .products .bags .card .text-card,
-.products .shoes .card .text-card {
+.products .shoes .card .text-card,
+.products .others .card .text-card {
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -343,18 +346,21 @@ body {
 } 
 
 .products .bags .card .text-card p,
-.products .shoes .card .text-card p {
+.products .shoes .card .text-card p,
+.products .others .card .text-card p {
     width: 200px;
     margin: 10px 0 10px 0;
 }
 
 .products .bags .card .text-card i,
-.products .shoes .card .text-card i {
+.products .shoes .card .text-card i,
+.products .others .card .text-card i {
     margin-top: 10px;
 }
 
 .products .bags .card .shopping,
-.products .shoes .card .shopping {
+.products .shoes .card .shopping,
+.products .others .card .shopping {
     display: flex;
     justify-content: space-between;
     padding: 10px;
