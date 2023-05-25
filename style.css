@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
 :root {
     --color-primary: #703b1c;
     --color-secundary: #482b1a;
@@ -49,6 +50,7 @@ body {
 .header .navbar ul li a {
     text-decoration: none;
     font-size: 20px;
+    font-weight: bold;
     color: var(--color-primary);
 }
 
@@ -455,7 +457,7 @@ body {
 }
 
 .contact-section .store-local {
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .contact-section .store-local img {
@@ -463,15 +465,40 @@ body {
     border-radius: 10px 10px 0 0;
 }
 
-.contact-section .store-local .opening-hours {
+.contact-section .store-local .informations {
     display: flex;
-    justify-content: space-between;
-    padding: 26px;
+    justify-content: space-around;
+    padding: 20px;
     border-radius: 0 0 10px 10px;
     background-color: #897853;
     color: #fff;
+    
 }
 
-.contact-section .store-local .opening-hours p {
+.contact-section .store-local .informations .opening-hours {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .store-local .informations .opening-hours h2,
+.contact-section .store-local .informations .address h2 {
+    border-bottom: 2px solid #fff;
+    margin-bottom: 8px;
+}
+
+.contact-section .store-local .informations .opening-hours p {
     width: 240px;
+    font-weight: bold;
+    color: #482b1a;
+}
+
+.contact-section .store-local .informations .address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-section .store-local .informations .address p {
+    font-weight: bold;
+    color: #482b1a;
 }
