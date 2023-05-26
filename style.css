@@ -222,6 +222,12 @@ body {
     width: 600px;
     height: 848px;
     border-radius: 10px;
+    transition: all 300ms;
+}
+
+.about-img img:hover {
+    scale: 1.01;
+    box-shadow: 0 0 10px #7e7a78;
 }
 
 .about-gallery {
@@ -260,6 +266,12 @@ body {
     padding: 18px;
     background-color: #F8F1F1;
     border-radius: 0 0 6px 6px;
+    transition: all 100ms;
+}
+
+.shoeshop-history .shoeshop-text:hover,
+.arnaldo-history .arnaldo-text:hover {
+    box-shadow: 0 0 10px #b8ab90;
 }
 
 .shoeshop-history p,
