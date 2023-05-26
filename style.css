@@ -277,6 +277,17 @@ body {
     height: auto;
 }
 
+/*
+Futuro banner
+
+.catalog-page .banner-catalog {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0 70%;
+}
+*/
+
 .catalog-page .catalog-text {
     display: flex;
     justify-content: center;
@@ -302,6 +313,11 @@ body {
     padding: 10px;
     border-radius: 10px;
     background-color: var(--color-primary);
+    transition: all 300ms;
+}
+
+.catalog-text .catalog-navbar:hover {
+    scale: 1.06;
 }
 
 .catalog-text .catalog-navbar ul {
