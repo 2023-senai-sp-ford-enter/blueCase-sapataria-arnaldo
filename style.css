@@ -218,6 +218,12 @@ body {
     flex-direction: column;
 }
 
+.about-img img {
+    width: 600px;
+    height: 848px;
+    border-radius: 10px;
+}
+
 .about-gallery {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
