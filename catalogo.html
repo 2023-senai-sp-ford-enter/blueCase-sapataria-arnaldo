@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
     
     <title>Sapataria do Arnaldo - Cátalogo</title>
 </head>
 <body>
     
-    <header class="header">
+    <header id="header" class="header">
         <h1 class="header-title">Sapataria do Arnaldo</h1>
 
         <nav class="navbar">
@@ -32,8 +33,8 @@
     </header>
 
     <main>
-        <section id="main" class="catalog-page">
-            <article class="catalog-text">
+        <section class="catalog-page">
+            <div class="catalog-text">
                 <h1>Catálogo</h1>
                 <p>Conheça alguns dos nossos produtos</p>  
 
@@ -56,7 +57,7 @@
                         </li>
                     </ul>
                 </nav>
-            </article>
+            </div>
             
             <section class="products">
                 <article id="bags" class="bags">
@@ -236,11 +237,29 @@
         </section>
 
         <button class="button-top">
-            <a href="#main">
+            <a href="#header">
                 <i class="fa-solid fa-arrow-up"></i>
             </a>
         </button>
     </main>
+
+    <footer class="footer-page">
+        <address class="address">
+            <p>Rua Forte do Leme, 52 - São Paulo</p>
+            <p>Telefone: (11) 3371-1279</p>
+        </address>
+
+        <div class="direct">
+            <p class="footer-title">Deixe sua marca.</p>
+            <p class="copyright">&copy; Direitos reservados BlueCase</p>
+        </div>
+
+        <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+    </footer>
 
     <script src="https://kit.fontawesome.com/02046696f9.js" crossorigin="anonymous"></script>
 </body>
