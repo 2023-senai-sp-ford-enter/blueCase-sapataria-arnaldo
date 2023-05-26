@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Desde 1940, a Sapataria do Arnaldo conserta sapatos, bolsas, e artigos de couro com excelência no atendimento">
+    <meta name="author" content="OtavioHFerraz">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <title>Sapataria do Arnaldo - Contato</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="header-title">Sapataria do Arnaldo</h1>
+
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="sobre-nos.html">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="catalogo.html">Catálogo</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <form class="contact-form">
+
+                <h1 class="form-title">Formulario de contato</h1>
+
+                <label for="fullName">Nome completo:</label>
+                <input id="fullName" type="text" name="fullName" required>
+
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" required>
+
+                <label for="subject">Assunto:</label>
+                <select name="subject" id="subject">
+                    <option value="deadline">Prazo de entrega</option>
+                    <option value="budget">Orçamento</option>
+                    <option value="payment">Pagemento</option>
+                    <option value="other">Outro</option>
+                </select>
+
+                <label for="message">Mensagem</label>
+                <textarea id="message" class="textarea" name="message" required></textarea>
+
+                <label for="number">Telefone</label>
+                <input id="number" type="tel" name="number" required>
+
+                <button class="contact-button">
+                    Enviar
+                </button>
+            </form>
+
+            <article class="store-local">
+                <img src="img/store-img.jpg" alt="Foto da loja física">
+
+                <div class="informations">
+                    <div class="opening-hours">
+                        <h2>Horário de funcionamento</h2>
+                        <p>Segunda a Sexta: das 08h às 17h Sábados: das 09h às 12h</p>
+                    </div>
+                    
+                    <address class="address">
+                        <h2>Endereço</h2>
+                        <p>Rua Forte do Leme, 52</p>
+                        <p>São Paulo</p>
+                        <p>Telefone: (11) 3371-1279</p>
+                    </address>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <address class="address">
+            <p>Rua Forte do Leme, 52 - São Paulo</p>
+            <p>Telefone: (11) 3371-1279</p>
+        </address>
+
+        <div class="direct">
+            <p>Deixe sua marca.</p>
+            <p class="copyright">&copy; Direitos reservados BlueCase</p>
+        </div>
+
+        <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/02046696f9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
