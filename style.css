@@ -390,6 +390,7 @@ body {
     color: #fff;
 }
 
+
 /****************************** CONTATO ******************************/
 
 
@@ -506,35 +507,46 @@ body {
     color: #482b1a;
 }
 
-.footer {
-    display: flex;  
+
+/****************************** FOOTER  ******************************/
+
+
+.footer-page {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 90px;
-    margin-top: 30px;
-    font-family: 'Yellowtail', cursive;
-    font-size: 40px;
+    margin-top: 60px;
+    padding: 20px;
     background-color: var(--color-tercary);
-    color: #ffffff;
+    color: #FFF;
 }
 
-.address {
-    margin-left: 50px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 15px;
+#footer-page.footer-page {
+    margin-top: 100px;
 }
 
-.icons {
+.footer-page .address p:first-child {
+    margin-bottom: 10px;
+}
+
+.footer-page .direct .footer-title {
+    margin-top: -10px;
+    font-size: 42px;
+    font-family: 'Yellowtail', cursive;
+}
+
+.footer-page .direct .copyright {
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-page .icons {
     display: flex;
     justify-content: space-around;
     width: 120px;
-    margin-right: 50px;
-    font-size: 28px;
+    font-size: 23px;
 }
 
-.direct .copyright {
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 15px;
-}
+
