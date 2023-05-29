@@ -686,7 +686,57 @@ Futuro banner
     } 
 
 
+    /****************************** CATÁLOGO ******************************/
+
+
+    .catalog-page {
+        width: 100%;
+    }
+
+    .catalog-page .catalog-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        margin-bottom: 600px;
+    }
+
+    .catalog-page .catalog-navbar {
+        width: 350px;
+    }
+
+    .products .bags,
+    .products .shoes,
+    .products .others {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+
+    
+    /****************************** CONTATO ******************************/
+
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-section .contact-form {
+        
+    }
+
+    #footer-contact {
+        position: absolute;
+        bottom: 0;
+    }
+
+
     /****************************** FOOTER ******************************/
+
 
     .footer-page {
         display: flex;
