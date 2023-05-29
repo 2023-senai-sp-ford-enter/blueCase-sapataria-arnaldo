@@ -586,3 +586,84 @@ Futuro banner
     width: 120px;
     font-size: 23px;
 }
+
+
+/****************************** RESPONSIVIDADE  ******************************/
+
+
+@media (max-width: 420px) {
+
+
+    /****************************** HEADER ******************************/
+
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header .header-title {
+        margin: 0 0 20px 0;
+        font-size: 40px;
+    }
+
+    .header .navbar {
+        width: 100%;
+        margin: 0;
+    }
+
+    .header .navbar ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 20px 0 28px 0;
+        border-top: 2px solid var(--color-primary);
+    }
+
+
+    /****************************** HOME ******************************/
+
+
+    .philosophy-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .philosophy-section .philosophy-text {
+        width: 85%;
+        margin: 40px 0 604px 0;
+    }
+
+    .philosophy-section .gallery {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 17vw);
+        width: 85%;
+        height: 700px;
+    }
+
+
+    /****************************** FOOTER ******************************/
+
+    .footer-page {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .footer-page .direct {
+        order: -1;
+        margin: 8px 0 20px 0;
+    }
+
+    .footer-page .icons {
+        margin-top: 20px;
+    }
+
+}
