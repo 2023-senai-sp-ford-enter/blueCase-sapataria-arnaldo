@@ -728,6 +728,20 @@ Futuro banner
         margin: 180px 0;
     }
 
+    /****************************** CONTATO ******************************/
+
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contact-section .store-local {
+        width: 85%;
+    }
+
+
     /****************************** FOOTER ******************************/
 
     .footer-page {
