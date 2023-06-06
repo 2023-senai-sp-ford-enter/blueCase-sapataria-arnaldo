@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,700&family=Yellowtail&display=swap');
 
 :root {
     --color-primary: #703b1c;
@@ -223,6 +222,7 @@ body {
     flex-direction: column;
 }
 
+
 .about-img img {
     width: 600px;
     height: 848px;
@@ -298,7 +298,6 @@ body {
     align-items: center;
     width: 100%;
     height: auto;
-}
 
 /*
 Futuro banner
@@ -607,6 +606,22 @@ Futuro banner
     color: var(--color-secundary);
 }
 
+.button-top {
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+}
+
+.button-top a {
+    font-size: 20px;
+    color: #fff;
+}
+
 /****************************** FOOTER  ******************************/
 
 
@@ -651,4 +666,162 @@ Futuro banner
     justify-content: space-around;
     width: 120px;
     font-size: 23px;
+}
+
+
+/****************************** RESPONSIVIDADE  ******************************/
+
+@media (max-width: 420px) {
+
+
+    /****************************** HEADER ******************************/
+
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header .header-title {
+        margin: 0 0 20px 0;
+        font-size: 40px;
+    }
+
+    .header .navbar {
+        width: 100%;
+        margin: 0;
+    }
+
+    .header .navbar ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 20px 0 28px 0;
+        border-top: 2px solid var(--color-primary);
+    }
+
+
+    /****************************** HOME ******************************/
+
+
+    .philosophy-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .philosophy-section .philosophy-text {
+        width: 85%;
+        margin: 40px 0 604px 0;
+    }
+
+    .philosophy-section .gallery {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 17vw);
+        width: 85%;
+        height: 700px;
+    }
+
+
+    /****************************** SOBRE NÓS ******************************/   
+
+
+    .about-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .about-img img {
+        width: 85%;
+        object-fit: cover;
+    }
+
+    .shoeshop-history,
+    .arnaldo-history {
+        width: 85%;
+    }
+
+    .about-gallery {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 12vw);
+        grid-gap: 15px;
+        width: 85%;
+        height: auto;
+    } 
+
+    .shoeshop-history,
+    .arnaldo-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /****************************** CATÁLOGO ******************************/
+
+
+    .catalog-page .catalog-text {
+        width: 85%;
+        text-align: center;
+    }
+
+    .catalog-page .catalog-text .catalog-navbar {
+        width: 92%;
+    }
+
+    .catalog-page .products .bags,
+    .catalog-page .products .shoes,
+    .catalog-page .products .others {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 180px 0;
+    }
+
+    /****************************** CONTATO ******************************/
+
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contact-section .store-local {
+        width: 85%;
+    }
+
+
+    /****************************** FOOTER ******************************/
+
+    .footer-page {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .footer-page .direct {
+        order: -1;
+        margin: 8px 0 20px 0;
+    }
+
+    .footer-page .icons {
+        margin-top: 20px;
+    }
 }
