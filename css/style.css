@@ -655,6 +655,9 @@ body {
 .register-section {
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
 }
 
 .register-form {
@@ -774,7 +777,6 @@ body {
 /****************************** RESPONSIVIDADE  ******************************/
 
 @media (max-width: 420px) {
-
 
     /****************************** HEADER ******************************/
 
