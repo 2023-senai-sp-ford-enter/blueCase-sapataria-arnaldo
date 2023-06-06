@@ -552,6 +552,7 @@ Futuro banner
 
 /****************************** LOGIN  ******************************/
 
+
 .login-section {
     display: flex;
     flex-direction: column;
@@ -565,27 +566,24 @@ Futuro banner
     display: flex;
     flex-direction: column;
     width: 400px;
-    background-color: var(--color-tercary);
     padding: 30px; 
     border-radius: 8px;   
+    background-color: var(--color-tercary);
 }
 
 .login-section .login-form h1 {
     margin-bottom: 20px;
-    font-size: 30px;
     text-align: center;
-    color: #FFF;
+    font-size: 30px;
     border-bottom: 2px solid #FFF;
     border-radius: 10px;
-
-
+    color: #FFF;
 }
+
 .login-section .login-form label{
-    color:#FFF;
     font-size: 17px;
+    color:#FFF;
 }
-
-
 
 .login-section .login-form input,
 .login-section .login-form button {
@@ -594,36 +592,20 @@ Futuro banner
     border: none;
     border-radius: 3px;
     color: var(--color-secundary);
-
 }
 
-.login-section .login-form .new-password{
+.login-section .login-form .new-password {
     color: #FFF;
-    margin: ;
 }
-
 
 .login-section .login-form button:hover {
     color: var(--color-secundary);
 }
 
-.login-section .user{
-    color: var(--color-secundary);
+.login-section .user {
     margin: 30px;
+    color: var(--color-secundary);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /****************************** FOOTER  ******************************/
 
