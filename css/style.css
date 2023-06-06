@@ -54,11 +54,14 @@ body {
     font-size: 20px;
     font-weight: bold;
     color: var(--color-primary);
-    transition: all 500ms;
+    transition: all 400ms;
 }
 
 .header .navbar ul li a:hover {
-    color: #b16a23;
+    padding: 8px;
+    border-radius: 6px;
+    background-color: var(--color-secundary);
+    color: #fff;
 }
 
 
@@ -299,16 +302,14 @@ body {
     width: 100%;
     height: auto;
 }
-/*
-Futuro banner
 
-.catalog-page .banner-catalog {
+.banner-ctlg {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    object-position: 0 70%;
+    object-position: 50% 75%;
 }
-*/
+
 
 .catalog-page .catalog-text {
     display: flex;
@@ -551,66 +552,84 @@ Futuro banner
 
 /****************************** LOGIN  ******************************/
 
-
 .login-section {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 80vh;
-}
-
-.login-section .login-form {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding: 30px; 
-    border-radius: 8px;   
-    background-color: var(--color-tercary);
+    justify-content: space-between;
 }
 
 .login-img {
     width: 50%;
     height: 80vh;
+    object-fit: cover;
+    object-position: 0 85%;
 }
 
-.login-section .login-form h1 {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 30px;
-    border-bottom: 2px solid #FFF;
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 80vh;
+}
+
+.div-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 450px;
     border-radius: 10px;
-    color: #FFF;
+    background-color: var(--color-tercary);
 }
 
-.login-section .login-form label{
-    font-size: 17px;
-    color:#FFF;
+.div-form .login-title {
+    margin: 20px 0;
+    font-size: 40px;
+    border-bottom: 2px solid #fff;
+    color: #fff;
 }
 
-.login-section .login-form input,
-.login-section .login-form button {
-    height: 30px;
-    margin: 5px 0 15px 0;
+.div-form label {
+    margin: 12px 0 3px -244px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.div-form input {
+    width: 80%;
+    height: 32px;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
+}
+
+.div-form button {
+    width: 80%;
+    height: 30px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-secundary);
+    transition: all 500ms;
+}
+
+.div-form button:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 6px #fff;
+}
+
+.div-form .new-password {
+    margin: 10px 0 10px -150px;
+    text-decoration: none;
+    font-weight: bold;
     color: var(--color-secundary);
 }
 
-.login-section .login-form .new-password {
+.div-form .register {
+    margin-top: 60px;
     text-decoration: none;
-    margin: -3px 0 13px 0;
-    color: #FFF;
-}
-
-.login-section .login-form button:hover {
-    color: var(--color-secundary);
-}
-
-.login-section .register {
-    font-weight: bolder;
-    text-decoration: none;
-    margin: 30px;
+    font-weight: bold;
     color: var(--color-secundary);
 }
 
@@ -799,6 +818,7 @@ Futuro banner
         height: auto;
         margin: 180px 0;
     }
+
 
     /****************************** CONTATO ******************************/
 
