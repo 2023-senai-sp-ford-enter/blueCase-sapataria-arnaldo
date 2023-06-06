@@ -299,16 +299,14 @@ body {
     width: 100%;
     height: auto;
 }
-/*
-Futuro banner
 
-.catalog-page .banner-catalog {
+.banner-ctlg {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    object-position: 0 70%;
+    object-position: 50% 75%;
 }
-*/
+
 
 .catalog-page .catalog-text {
     display: flex;
@@ -804,6 +802,7 @@ Futuro banner
         height: auto;
         margin: 180px 0;
     }
+
 
     /****************************** CONTATO ******************************/
 
