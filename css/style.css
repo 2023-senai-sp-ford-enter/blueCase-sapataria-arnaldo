@@ -795,21 +795,26 @@ body {
     }
 
     .header .header-title {
-        margin: 0 0 20px 0;
+        margin: 50px 0 20px 0;
         font-size: 40px;
     }
 
     .header .navbar {
         width: 100%;
         margin: 0;
+        background-color: var(--color-secundary);
     }
-
+    
     .header .navbar ul {
         display: flex;
         justify-content: space-around;
         width: 100%;
         padding: 20px 0 28px 0;
-        border-top: 2px solid var(--color-primary);
+    }
+    
+    .header .navbar ul li a {
+        font-size: 18px;
+        color: #FFF;
     }
 
 
@@ -884,6 +889,10 @@ body {
     /****************************** CATÁLOGO ******************************/
 
 
+    .catalog-page {
+        margin-top: 34px;
+    }
+
     .catalog-page .catalog-text {
         width: 85%;
         text-align: center;
@@ -900,6 +909,16 @@ body {
         flex-direction: column;
         height: auto;
         margin: 180px 0;
+    }
+
+    .catalog-page .products .bags .card,
+    .catalog-page .products .shoes .card,
+    .catalog-page .products .others .card {
+        margin: 20px;
+    }
+
+    .button-top {
+        bottom: 30px;
     }
 
 
