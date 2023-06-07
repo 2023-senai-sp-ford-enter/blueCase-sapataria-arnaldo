@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,700&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script&display=swap');
 
 :root {
     --color-primary: #703b1c;
@@ -32,9 +33,9 @@ body {
 
 .header .header-title {
     margin-left: 50px;
-    font-family: 'Yellowtail', cursive;
+    font-family: 'Dancing Script', cursive;
     font-size: 60px;
-    font-weight: bold;
+    font-weight: bolder;
     color: var(--color-primary);
 }
 
@@ -513,7 +514,8 @@ body {
 }
 
 .contact-section .store-local img {
-    width: 700px;
+    width: 496px;
+    height: 450px;
     border-radius: 10px 10px 0 0;
 }
 
