@@ -308,8 +308,14 @@ body {
     height: 200px;
     object-fit: cover;
     object-position: 50% 75%;
+    transition: all 500ms;
 }
 
+.banner-ctlg:hover {
+    width: 100%;
+    height: 400px;
+    object-position: 0 81%;
+}
 
 .catalog-page .catalog-text {
     display: flex;
@@ -317,7 +323,7 @@ body {
     flex-direction: column;
     align-items: center;
     height: 80vh;
-    margin-bottom: 100px;
+    margin-top: -100px;
     font-size: 28px;
 }
 
