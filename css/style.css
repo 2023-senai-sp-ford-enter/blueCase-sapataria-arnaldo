@@ -532,8 +532,8 @@ body {
     flex-direction: column;
 }
 
-.contact-section .store-local .informations .opening-hours h2,
-.contact-section .store-local .informations .address h2 {
+.contact-section .store-local .informations .opening-hours h1,
+.contact-section .store-local .informations .address h1 {
     border-bottom: 2px solid #fff;
     margin-bottom: 8px;
 }
@@ -938,10 +938,22 @@ body {
         width: 85%;
         margin-bottom: 50px;
     }
+    
+    .contact-section .store-local {
+        width: 85%;
+        margin-bottom: 80px;
+    }
   
     .contact-section .store-local img {
-        width: 90%;
+        width: 100%;
     }
+
+    .store-local .informations {
+        display: flex;
+        flex-direction: column;
+    }
+
+
   
   
     /****************************** FOOTER ******************************/
