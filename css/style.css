@@ -456,7 +456,6 @@ body {
 .contact-section .contact-form .form-title {
     display: flex;
     justify-content: center;
-    text-align: center;
     margin-bottom: 28px;
     padding: 6px;
     font-size: 26px;
@@ -514,12 +513,13 @@ body {
 
 .contact-section .store-local img {
     width: 700px;
+    height: auto;
     border-radius: 10px 10px 0 0;
 }
 
 .contact-section .store-local .informations {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 20px;
     border-radius: 0 0 10px 10px;
     background-color: #897853;
@@ -545,9 +545,7 @@ body {
 }
 
 .contact-section .store-local .informations .address {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    text-align: end;
 }
 
 .contact-section .store-local .informations .address p {
@@ -946,17 +944,11 @@ body {
     }
     
     .contact-section .store-local {
-        width: 92%;
-        margin-bottom: 80px;
+        width: 96%;
     }
   
     .contact-section .store-local img {
         width: 100%;
-    }
-
-    .store-local .informations {
-        display: flex;
-        flex-direction: column;
     }
 
   
