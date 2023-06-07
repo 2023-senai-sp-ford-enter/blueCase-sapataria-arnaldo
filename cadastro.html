@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
-  
-    <title>Sapataria do Arnaldo - Contato</title>
+    <title>Sapataria do Aranaldo - Cadastro</title>
 </head>
-
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <h1 class="header-title">Sapataria do Arnaldo</h1>
 
         <nav class="navbar">
@@ -36,33 +34,34 @@
     </header>
 
     <main>
-        <section class="login-section">
-            <img class="login-img" src="img/city.jpg" alt="Pintura ilustrativa da página de login">
+        <section class="register-section">
+            <form class="register-form">
+                <h1 class="form-title">Cadastro</h1>
 
-            <form class="login-form">
-                <div class="div-form">
-                    <h1 class="login-title"> login </h1>
-                    
-                    <label for="email">Email:</label>
-                    <input id="email" type="email" name="email" required>
-                    
-                    <label for="fullName">Senha:</label>
-                    <input id="fullName" type="text" name="fullName" required>
-                    
-                    <a class="new-password" href="cadastro.html"> Esqueceu sua senha ?</a>
-                    
-                    <button class="contact-button">
-                        Entrar
-                    </button>
-                    
-                    <a class="register" href="cadastro.html">--&gt; Cadastre-se aqui &lt;-- </a>
-                </div>
+                <label for="fullName">Nome completo:</label>
+                <input id="fullName" type="text" name="fullName" required>
+
+                <label for="birthDate">Data de nascimento:</label>
+                <input id="birthDate" type="date" name="birthDate" required>
+
+                <label for="cpf">CPF:</label>
+                <input id="cpf" type="tel" name="cpf" required>
+
+                <label for="address">Endereço:</label>
+                <input id="address" type="text" name="address" required>
+
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" required>
+
+                <label for="number">Telefone:</label>
+                <input id="number" type="tel" name="number" required>
+
+                <button class="register-button">Criar cadastro</button>
             </form>
-
         </section>
     </main>
-  
-    <footer id="footer-contact" class="footer-page">
+
+    <footer id="footer-about" class="footer-page">
         <address class="address">
             <p>Rua Forte do Leme, 52 - São Paulo</p>
             <p>Telefone: (11) 3371-1279</p>
@@ -81,5 +80,5 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/02046696f9.js" crossorigin="anonymous"></script>
-</body>
+    </body>
 </html>
