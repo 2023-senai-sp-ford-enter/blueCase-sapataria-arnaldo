@@ -58,7 +58,7 @@ body {
 }
 
 .header .navbar ul li a:hover {
-    padding: 8px;
+    padding: 10px;
     border-radius: 6px;
     background-color: var(--color-secundary);
     color: #fff;
@@ -608,31 +608,41 @@ body {
 .div-form button {
     width: 80%;
     height: 35px;
-    margin-top: 50px;
+    margin-top: 70px;
     border: none;
     border-radius: 5px;
     font-size: 18px;
     font-weight: bold;
     color: var(--color-secundary);
-    transition: all 500ms;
+    transition: all 600ms;
     cursor: pointer;
 }
 
 .div-form button:hover {
     transform: scale(1.04);
-    box-shadow: 0 0 6px #fff;
+    box-shadow: 0 0 4px #fff;
 }
 
 .div-form .new-password {
     margin: 10px 0 10px -150px;
     text-decoration: none;
     color: #dfcba0;
+    transition: all 500ms;
+}
+
+.div-form .new-password:hover {
+    color: var(--color-secundary);
 }
 
 .div-form .register {
-    margin-top: 20px;
+    margin-top: 30px;
     text-decoration: none;
     color: #dfcba0;
+    transition: all 500ms;
+}
+
+.div-form .register:hover {
+    color: var(--color-secundary);
 }
 
 .button-top {
@@ -783,7 +793,9 @@ body {
     display: flex;
     justify-content: space-evenly;
     width: 300px;
+    padding: 100px 0;
     font-size: 23px;
+    cursor: pointer;
 }
 
 
