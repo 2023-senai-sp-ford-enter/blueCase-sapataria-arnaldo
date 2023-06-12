@@ -33,7 +33,7 @@ body {
 .header .header-title {
     margin-left: 40px;
     font-family: 'Dancing Script', cursive;
-    font-size: 60px;
+    font-size: 54px;
     font-weight: bolder;
     color: var(--color-primary);
 }
