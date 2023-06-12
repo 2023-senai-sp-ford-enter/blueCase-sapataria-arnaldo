@@ -512,18 +512,19 @@ body {
 }
 
 .contact-section .store-local img {
-    width: 700px;
+    width: 580px;
+    height: 452px;
     border-radius: 10px 10px 0 0;
 }
 
 .contact-section .store-local .informations {
     display: flex;
     justify-content: space-between;
+    width: 580px;
     padding: 20px;
     border-radius: 0 0 10px 10px;
     background-color: #897853;
     color: #fff;
-    
 }
 
 .contact-section .store-local .informations .opening-hours {
