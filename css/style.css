@@ -279,7 +279,7 @@ body {
 
 .shoeshop-history .shoeshop-text:hover,
 .arnaldo-history .arnaldo-text:hover {
-    box-shadow: 0 0 10px #b8ab90;
+    box-shadow: 0 0 10px #cabbb0de;
 }
 
 .shoeshop-history p,
@@ -761,14 +761,17 @@ body {
 }
 
 .footer-page .direct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 300px;
     text-align: center;
 }
 
 .footer-page .direct .footer-title {
     margin-top: -10px;
-    font-size: 42px;
-    font-family: 'Yellowtail', cursive;
+    font-size: 46px;
+    font-family: 'Dancing Script', cursive;
 }
 
 .footer-page .direct .copyright {
