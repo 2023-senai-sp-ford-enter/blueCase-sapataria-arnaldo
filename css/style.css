@@ -758,15 +758,6 @@ body {
     color: #FFF;
 }
 
-#footer-about.footer-page {
-    margin-top: 100px;
-}
-
-#footer-contact.footer-page {
-    position: absolute;
-    bottom: 0;
-}
-
 .footer-page .address {
     width: 300px;
 }
@@ -800,6 +791,19 @@ body {
     padding: 20px 0 20px 0;
     font-size: 23px;
     cursor: pointer;
+}
+
+#footer-about.footer-page {
+    margin-top: 100px;
+}
+
+#footer-contact.footer-page {
+    position: absolute;
+    bottom: 0;
+}
+
+#footer-login.footer-page {
+    margin-top: 0;
 }
 
 
