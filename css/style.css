@@ -447,7 +447,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 400px;
-    margin-top: 40px;
+    margin-top: 60px;
     padding: 20px;
     border-radius: 10px;
     background-color: #897853;
@@ -508,7 +508,7 @@ body {
 }
 
 .contact-section .store-local {
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .contact-section .store-local img {
@@ -669,7 +669,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: auto;
 }
 
 .register-form {
@@ -689,9 +688,9 @@ body {
     margin-bottom: 28px;
     padding: 6px;
     font-size: 26px;
-    color: #fff;
     border-radius: 5px; 
-    border-bottom: 2px solid #fff   
+    border-bottom: 2px solid #fff;   
+    color: #fff;
 }
 
 .register-section .register-form label {
@@ -793,7 +792,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     width: 300px;
-    padding: 100px 0;
+    padding: 20px 0 20px 0;
     font-size: 23px;
     cursor: pointer;
 }
