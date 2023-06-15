@@ -351,6 +351,20 @@ body {
     scale: 1.06;
 }
 
+[data-animation] {
+    transition: all .3s;
+}
+
+[data-animation="top"] {
+    transform: translate3d(0, -50px, 0);
+}
+
+[data-animation="top"].animation {
+    position: fixed;
+    top: 70px;
+    transform: translate(0, 0, 0);
+}
+
 .catalog-text .catalog-navbar ul {
     display: flex;
     justify-content: space-around;
