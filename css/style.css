@@ -983,7 +983,7 @@ body {
 
     .contact-form {
         width: 80%;
-        margin-bottom: 50px;
+        margin-bottom: -32px;
     }
     
     .contact-section .store-local {
@@ -991,6 +991,8 @@ body {
         flex-direction: column;
         align-items: center;
         width: 380px;
+        height: auto;
+        margin-bottom: 100px;
     }
   
     .contact-section .store-local img {
@@ -1000,6 +1002,7 @@ body {
     .store-local .informations {
         display: flex;
         flex-direction: column;
+        width: 80%;
         height: auto;
     }
 
