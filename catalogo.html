@@ -40,22 +40,18 @@
                 <h1>Catálogo</h1>
                 <p>Conheça alguns dos nossos produtos</p>  
 
-                <a href="#bags">
-                    <i class="fa-sharp fa-solid fa-arrow-down fa-bounce"></i>
-                </a>
-
-                <nav class="catalog-navbar" data-animation="top">
+                <nav class="catalog-navbar">
                     <ul>
                         <li>
-                            <a href="#bags" class="button-bags">Bolsas</a>
+                            <a href="#bags" class="button-bags" data-animation="click">Bolsas</a>
                         </li>
                         
                         <li>
-                            <a href="#shoes" class="-button-shoes">Sapatos</a>
+                            <a href="#shoes" class="-button-shoes" data-animation="click">Sapatos</a>
                         </li>
                         
                         <li>
-                            <a href="#others" class="button-others">Outros</a>
+                            <a href="#others" class="button-others" data-animation="click">Outros</a>
                         </li>
                     </ul>
                 </nav>
@@ -238,9 +234,9 @@
             </section>
         </section>
 
-        <button class="button-top">
+        <button class="button-top" data-click="button">
             <a href="#header">
-                <i class="fa-solid fa-arrow-up"></i>
+                <i class="fa-solid fa-arrow-up" data-animation="disable"></i>
             </a>
         </button>
     </main>

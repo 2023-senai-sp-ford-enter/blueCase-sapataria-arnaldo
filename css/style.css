@@ -62,8 +62,7 @@ body {
 .header .navbar ul li a:hover {
     padding: 10px;
     border-radius: 6px;
-    background-color: var(--color-secundary);
-    color: #fff;
+    color: #aa7436;
 }
 
 
@@ -333,14 +332,9 @@ body {
     margin: 20px;
 }
 
-.catalog-page .catalog-text .fa-sharp {
-    margin: 30px 0 50px 0;
-    font-size: 50px;
-    color: #482b1a;
-}
-
 .catalog-text .catalog-navbar {
     width: 500px;
+    margin-top: 80px;
     padding: 10px;
     border-radius: 10px;
     background-color: var(--color-primary);
@@ -359,10 +353,13 @@ body {
     transform: translate3d(0, -50px, 0);
 }
 
-[data-animation="top"].animation {
+[data-animation="click"].animation {
     position: fixed;
-    top: 70px;
-    transform: translate(0, 0, 0);
+    top: 50px;
+}
+
+[data-animation="disable"].disable {
+    
 }
 
 .catalog-text .catalog-navbar ul {

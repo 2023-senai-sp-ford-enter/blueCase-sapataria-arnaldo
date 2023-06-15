@@ -1,20 +1,30 @@
-
-const target = document.querySelectorAll('[data-animation]');
-const animationClass = 'animation';
+/*let target = document.querySelectorAll('[data-animation]');
+let animationClass = 'animation';
 
 function animationScroll() {
-    const windowTop = window.scrollY + ((window.innerHeight * 3) / 4);
+    let windowTop = window.scrollY + 1000;
+
     target.forEach((e) => {
-        if (windowTop >= e.offsetTop) {
+            if ((windowTop) > e.offsetTop) {
             e.classList.add(animationClass);
         } else {
-            e.classList.remove('animationClass');
+            e.classList.remove(animationClass);
         }
     })
 }
 
-if(target.length) {
+if (target.length) {
     window.addEventListener('scroll', () => {
         animationScroll();
     })
+}*/
+
+let btnNavbar = document.querySelectorall('["data-animation"]');
+let animationClass = 'animation';
+
+function btnClick () {
+    if 
 }
+
+
+
