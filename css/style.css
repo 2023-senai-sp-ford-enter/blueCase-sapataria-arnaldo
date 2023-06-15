@@ -343,7 +343,7 @@ body {
 
 [data-animation="animation"].animation {
     position: fixed;
-    top: 30px;
+    top: 20px;
 }
 
 .catalog-text .catalog-navbar:hover {
@@ -435,8 +435,8 @@ body {
 [data-animation="btn"].btn {
     display: block;
     position: fixed;
-    top: 109px;
-    right: 620px;
+    top: 99px;
+    right: 610px;
     border-radius: 50%;
     transition: all 500ms;
 }
