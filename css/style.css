@@ -341,25 +341,13 @@ body {
     transition: all 300ms;
 }
 
+[data-animation="animation"].animation {
+    position: fixed;
+    top: 30px;
+}
+
 .catalog-text .catalog-navbar:hover {
     scale: 1.06;
-}
-
-[data-animation] {
-    transition: all .3s;
-}
-
-[data-animation="top"] {
-    transform: translate3d(0, -50px, 0);
-}
-
-[data-animation="click"].animation {
-    position: fixed;
-    top: 50px;
-}
-
-[data-animation="disable"].disable {
-    
 }
 
 .catalog-text .catalog-navbar ul {
@@ -432,19 +420,24 @@ body {
 }
 
 .button-top {
-    position: fixed;
-    bottom: 100px;
-    right: 40px;
+    display: none;
     width: 50px;
     height: 50px;
     border: none;
-    border-radius: 50%;
     background-color: var(--color-primary);
 }
 
 .button-top a {
     font-size: 20px;
     color: #fff;
+}
+
+[data-animation="btn"].btn {
+    display: block;
+    position: fixed;
+    top: 109px;
+    right: 620px;
+    border-radius: 50%;
 }
 
 
