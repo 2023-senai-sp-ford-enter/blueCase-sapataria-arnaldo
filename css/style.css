@@ -438,6 +438,7 @@ body {
     top: 109px;
     right: 620px;
     border-radius: 50%;
+    transition: all 500ms;
 }
 
 
@@ -828,7 +829,7 @@ body {
 
     .header .header-title {
         margin: 50px 0 30px 0;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .header .navbar {
@@ -935,7 +936,7 @@ body {
     }
 
     .catalog-page .catalog-text .catalog-navbar {
-        width: 96%;
+        width: 90%;
     }
 
     .catalog-page .products .bags,
@@ -954,7 +955,7 @@ body {
     }
 
     .button-top {
-        bottom: 30px;
+        bottom: 10px;
     }
 
 
