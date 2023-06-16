@@ -531,6 +531,8 @@ body {
     width: 580px;
     height: 452px;
     border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    object-position: 3 0% 60%;
 }
 
 .contact-section .store-local .informations {
