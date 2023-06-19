@@ -62,7 +62,7 @@ body {
 .header .navbar ul li a:hover {
     padding: 10px;
     border-radius: 6px;
-    color: #aa7436;
+    color: #d6970f;
 }
 
 
@@ -309,6 +309,7 @@ body {
     height: 200px;
     object-fit: cover;
     object-position: 50% 74%;
+    border-bottom: 2px solid var(--color-primary);
     transition: all 500ms;
 }
 
@@ -324,8 +325,12 @@ body {
     flex-direction: column;
     align-items: center;
     height: 80vh;
-    margin-top: -100px;
+    margin-top: -210px;
     font-size: 28px;
+}
+
+.catalog-page .catalog-text h1 {
+    font-size: 48px;
 }
 
 .catalog-page .catalog-text p {
@@ -334,7 +339,7 @@ body {
 
 .catalog-text .catalog-navbar {
     width: 500px;
-    margin-top: 80px;
+    margin-top: 12px;
     padding: 10px;
     border-radius: 10px;
     background-color: var(--color-primary);
@@ -505,14 +510,19 @@ body {
 
 .contact-section .contact-form .contact-button {
     width: 100%;
-    height: 36px;
+    height: 40px;
     padding: 6px;
     font-size: 20px;
     border-radius: 5px;
     border: none;   
-    background-color: var(--color-secundary);
+    background-color: #cd590a;
     color: #fff;
     transition: all 500ms;
+    cursor: pointer;
+}
+
+.contact-section .contact-form .contact-button:hover {
+    background-color: #ff6700;
 }
 
 .contact-section .store-local {
@@ -544,23 +554,17 @@ body {
 
 .contact-section .store-local .informations .opening-hours h1,
 .contact-section .store-local .informations .address h1 {
-    border-bottom: 2px solid #fff;
+    font-weight: bold;
+    border-bottom: 2px solid #EFEFEF;
     margin-bottom: 8px;
 }
 
 .contact-section .store-local .informations .opening-hours p {
     width: 240px;
-    font-weight: bold;
-    color: #fff;
 }
 
 .contact-section .store-local .informations .address {
     text-align: end;
-}
-
-.contact-section .store-local .informations .address p {
-    font-weight: bold;
-    color: #fff;
 }
 
 
@@ -626,14 +630,16 @@ body {
     border-radius: 5px;
     font-size: 18px;
     font-weight: bold;
-    color: var(--color-secundary);
+    background-color: #cd590a;
+    color: #fff;
     transition: all 600ms;
     cursor: pointer;
 }
 
 .div-form button:hover {
     transform: scale(1.04);
-    box-shadow: 0 0 4px #fff;
+    box-shadow: 0 0 4px #d85d0a;
+    background-color: #ff6700;
 }
 
 .div-form .new-password {
@@ -738,9 +744,15 @@ body {
     font-size: 20px;
     border-radius: 5px;
     border: none;   
-    background-color: var(--color-secundary);
+    background-color: #cd590a;
     color: #fff;
+    transition: all 500ms;
     cursor: pointer;
+}
+
+.register-section .register-form .register-button:hover {
+    transform: scale3d(1.03, 1.06,  1.1);
+    background-color: #ff6700;
 }
 
 
