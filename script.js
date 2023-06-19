@@ -1,4 +1,7 @@
+const navbar = document.getElementById('navbar');
+const btnTop = document.getElementById('btn-top');
 
+<<<<<<< HEAD
 const target = document.querySelectorAll('[data-animation]');
 const animationClass = 'animation';
 
@@ -11,10 +14,22 @@ function animationScroll() {
             e.classList.remove(animationClass);
         }
     })
+=======
+function navbarElement (posicao) {
+    if (posicao > navbar.offsetTop && posicao > btnTop.offsetTop) {
+        navbar.classList.add('animation');
+        btnTop.classList.add('btn')
+    } else {
+        navbar.classList.remove('animation');
+        btnTop.classList.remove('btn')
+    }
+>>>>>>> main
 }
 
-if(target.length) {
-    window.addEventListener('scroll', () => {
-        animationScroll();
-    })
-}
+document.addEventListener('scroll', () => {
+    navbarElement(window.scrollY);
+});
+
+
+
+
