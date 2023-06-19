@@ -8,7 +8,7 @@ function animationScroll() {
         if (windowTop >= e.offsetTop) {
             e.classList.add(animationClass);
         } else {
-            e.classList.remove('animationClass');
+            e.classList.remove(animationClass);
         }
     })
 }

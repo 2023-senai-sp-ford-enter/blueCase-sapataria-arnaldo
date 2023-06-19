@@ -325,7 +325,7 @@ body {
     flex-direction: column;
     align-items: center;
     height: 80vh;
-    margin-top: -210px;
+    margin-top: -230px;
     font-size: 28px;
 }
 
@@ -346,7 +346,7 @@ body {
     transition: all 300ms;
 }
 
-[data-animation="animation"].animation {
+[data-animation="animation"].animation{
     position: fixed;
     top: 20px;
 }
@@ -361,9 +361,17 @@ body {
     list-style: none;
 }
 
-.catalog-text .catalog-navbar ul li a{
+.catalog-text .catalog-navbar ul li {
+    transition: all 500ms;
+}
+
+.catalog-text .catalog-navbar ul li a {
     text-decoration: none;
     color: #fff;
+}
+
+.catalog-text .catalog-navbar ul li:hover {
+    scale: 1.08;
 }
 
 .products {
