@@ -45,7 +45,7 @@
                 <input id="birthDate" type="date" name="birthDate" required>
 
                 <label for="cpf">Cadastro de Pessoa Fisica</label>
-                <input id="cpf" type="number" name="cpf" required>
+                <input id="cpf" type="text" name="cpf" pattern="[0-9]{11}" title="Digite 11 números" required>
 
                 <label for="address">Endereço</label>
                 <input id="address" type="text" name="address" required>
@@ -54,7 +54,7 @@
                 <input id="email" type="email" name="email" required>
 
                 <label for="number">Telefone</label>
-                <input id="number" type="tel" name="number" required>
+                <input id="text" type="tel" name="number" pattern="[0-9]{11}" title="Digite 11 números" required>
 
                 <button class="register-button">Criar cadastro</button>
             </form>
