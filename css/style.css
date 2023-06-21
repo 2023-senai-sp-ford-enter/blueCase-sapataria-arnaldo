@@ -9,7 +9,7 @@
 }
 
 [data-theme='dark'] {
-    --backround-color: #000;
+    --background-color: #000;
 }
 
 * {
@@ -22,6 +22,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     width: 100%;
     height: 100vh;
+    background-color: var(--background-color);
 }
 
 
@@ -56,17 +57,19 @@ body {
     list-style: none;
 }
 
+
 .header .navbar ul li a {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
     color: var(--color-primary);
     transition: all 400ms;
+    cursor: pointer;
 }
 
 .header .navbar ul li a:hover {
+    font-size: 21px;
     padding: 10px;
-    border-radius: 6px;
     color: #d67e43;
 }
 

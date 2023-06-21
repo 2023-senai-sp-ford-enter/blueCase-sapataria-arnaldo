@@ -18,22 +18,22 @@ document.addEventListener('scroll', () => {
 
 // Função para alterar o tema
 
-const btnTema = document.querySelector('#theme-btn');
-
-const currentTheme = localStorage.getItem('data-theme') ? localStorage.getItem('data-theme') : '';
 const rootElement = document.documentElement;
-rootElement.setAttribute('data-theme', rootElement)
 
+const currentTheme = localStorage.getItem('data-theme') ? localStorage.getItem('data-theme') : 'white';
 
-btnTema.addEventListener('click', () => {
-    if (rootElement.setAttribute('data-theme') === 'white') {
-        rootElement.setAttribute('data-theme', 'black');
-        localStorage.setItem('data-theme', 'black');
+rootElement.setAttribute('data-theme', currentTheme);
+
+document.querySelector('#theme-btn').addEventListener('click', () => {
+
+    if (rootElement.getAttribute('data-theme') === 'white') {
+        rootElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('data-theme', 'dark');
     } else {
         rootElement.setAttribute('data-theme', 'white');
         localStorage.setItem('data-theme', 'white');
     }
-})
+});
 
 
 
