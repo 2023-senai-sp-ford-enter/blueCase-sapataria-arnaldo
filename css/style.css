@@ -88,7 +88,7 @@ body {
     padding: 12px;
     font-size: 23px;
     border-radius: 6px 6px 0 0;
-    background-color: #897853;
+    background-color: var(--color-primary);
     color: #EFEFEF;
 }
 
@@ -266,7 +266,7 @@ body {
     text-align: center;
     padding: 12px;
     border-radius: 6px 6px 0 0;
-    background-color: #897853;
+    background-color: var(--color-primary);
     color: #EFEFEF;
 }
 
@@ -310,6 +310,7 @@ body {
     height: 200px;
     object-fit: cover;
     object-position: 50% 74%;
+    border-bottom: 2px solid var(--color-primary);
     transition: all 500ms;
 }
 
@@ -325,18 +326,16 @@ body {
     flex-direction: column;
     align-items: center;
     height: 80vh;
-    margin-top: -100px;
+    margin-top: -230px;
     font-size: 28px;
+}
+
+.catalog-page .catalog-text h1 {
+    font-size: 48px;
 }
 
 .catalog-page .catalog-text p {
     margin: 20px;
-}
-
-.catalog-page .catalog-text .fa-sharp {
-    margin: 30px 0 50px 0;
-    font-size: 50px;
-    color: #482b1a;
 }
 
 .catalog-text .catalog-navbar {
@@ -351,29 +350,23 @@ body {
     scale: 1.06;
 }
 
-[data-animation] {
-    transition: all .3s;
-}
-
-[data-animation="top"] {
-    transform: translate3d(0, -50px, 0);
-}
-
-[data-animation="top"].animation {
-    position: fixed;
-    top: 70px;
-    transform: translate(0, 0, 0);
-}
-
 .catalog-text .catalog-navbar ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
 }
 
-.catalog-text .catalog-navbar ul li a{
+.catalog-text .catalog-navbar ul li {
+    transition: all 500ms;
+}
+
+.catalog-text .catalog-navbar ul li a {
     text-decoration: none;
     color: #fff;
+}
+
+.catalog-text .catalog-navbar ul li:hover {
+    scale: 1.08;
 }
 
 .products {
@@ -395,6 +388,7 @@ body {
 .products .others .card img {
     width: 320px;
     height: 320px;
+    margin-bottom: 10px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     background-color: #f0f0f0;
@@ -406,7 +400,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    background-color: #897853;
+    background-color: var(--color-primary);
     color: #fff;
 } 
 
@@ -430,24 +424,30 @@ body {
     justify-content: space-between;
     padding: 10px;
     border-radius: 0 0 10px 10px;
-    background-color: #897853;
+    background-color: var(--color-primary);
     color: #fff;
 }
 
 .button-top {
-    position: fixed;
-    bottom: 100px;
-    right: 40px;
+    display: none;
     width: 50px;
     height: 50px;
     border: none;
-    border-radius: 50%;
     background-color: var(--color-primary);
 }
 
 .button-top a {
     font-size: 20px;
     color: #fff;
+}
+
+[data-animation="btn"].btn {
+    display: block;
+    position: fixed;
+    top: 99px;
+    right: 610px;
+    border-radius: 50%;
+    transition: all 500ms;
 }
 
 
@@ -466,13 +466,13 @@ body {
     margin-top: 60px;
     padding: 20px;
     border-radius: 10px;
-    background-color: #897853;
+    background-color: var(--color-primary);
 }
 
 .contact-section .contact-form .form-title {
     display: flex;
     justify-content: center;
-    margin-bottom: 28px;
+    margin-bottom: 28px;    
     padding: 6px;
     font-size: 26px;
     color: #fff;
@@ -513,14 +513,19 @@ body {
 
 .contact-section .contact-form .contact-button {
     width: 100%;
-    height: 36px;
+    height: 40px;
     padding: 6px;
     font-size: 20px;
     border-radius: 5px;
     border: none;   
-    background-color: var(--color-secundary);
+    background-color: #cd590a;
     color: #fff;
     transition: all 500ms;
+    cursor: pointer;
+}
+
+.contact-section .contact-form .contact-button:hover {
+    background-color: #ff6700;
 }
 
 .contact-section .store-local {
@@ -538,10 +543,10 @@ body {
 .contact-section .store-local .informations {
     display: flex;
     justify-content: space-between;
-    width: 580px;
+    width: 100%;
     padding: 20px;
     border-radius: 0 0 10px 10px;
-    background-color: #897853;
+    background-color: var(--color-primary);
     color: #fff;
 }
 
@@ -552,23 +557,17 @@ body {
 
 .contact-section .store-local .informations .opening-hours h1,
 .contact-section .store-local .informations .address h1 {
-    border-bottom: 2px solid #fff;
+    font-weight: bold;
+    border-bottom: 2px solid #EFEFEF;
     margin-bottom: 8px;
 }
 
 .contact-section .store-local .informations .opening-hours p {
     width: 240px;
-    font-weight: bold;
-    color: #482b1a;
 }
 
 .contact-section .store-local .informations .address {
     text-align: end;
-}
-
-.contact-section .store-local .informations .address p {
-    font-weight: bold;
-    color: #482b1a;
 }
 
 
@@ -602,7 +601,7 @@ body {
     width: 400px;
     height: 450px;
     border-radius: 10px;
-    background-color: var(--color-tercary);
+    background-color: var(--color-primary);
 }
 
 .div-form .login-title {
@@ -613,7 +612,7 @@ body {
 }
 
 .div-form label {
-    margin: 12px 0 3px -244px;
+    margin: 20px 0 3px -244px;
     font-size: 24px;
     color: #fff;
 }
@@ -621,6 +620,7 @@ body {
 .div-form input {
     width: 80%;
     height: 32px;
+    padding-left: 10px;
     border: none;
     border-radius: 5px;
 }
@@ -628,41 +628,35 @@ body {
 .div-form button {
     width: 80%;
     height: 35px;
-    margin-top: 70px;
+    margin-top: 55px;
     border: none;
     border-radius: 5px;
     font-size: 18px;
     font-weight: bold;
-    color: var(--color-secundary);
+    background-color: #cd590a;
+    color: #fff;
     transition: all 600ms;
     cursor: pointer;
 }
 
 .div-form button:hover {
     transform: scale(1.04);
-    box-shadow: 0 0 4px #fff;
+    box-shadow: 0 0 4px #d85d0a;
+    background-color: #ff6700;
 }
 
 .div-form .new-password {
-    margin: 10px 0 10px -150px;
+    margin: 14px 0 10px -150px;
     text-decoration: none;
-    color: #dfcba0;
+    color: #e9e1d1;
     transition: all 500ms;
-}
-
-.div-form .new-password:hover {
-    color: var(--color-secundary);
 }
 
 .div-form .register {
-    margin-top: 30px;
+    margin-top: 22px;
     text-decoration: none;
-    color: #dfcba0;
+    color: #e9e1d1;
     transition: all 500ms;
-}
-
-.div-form .register:hover {
-    color: var(--color-secundary);
 }
 
 .button-top {
@@ -699,7 +693,7 @@ body {
     margin-top: 100px;
     padding: 20px;
     border-radius: 10px;
-    background-color: #897853;
+    background-color: var(--color-primary);
 }
 
 .register-form .form-title {
@@ -753,9 +747,15 @@ body {
     font-size: 20px;
     border-radius: 5px;
     border: none;   
-    background-color: var(--color-secundary);
+    background-color: #cd590a;
     color: #fff;
+    transition: all 500ms;
     cursor: pointer;
+}
+
+.register-section .register-form .register-button:hover {
+    transform: scale3d(1.03, 1.06,  1.1);
+    background-color: #ff6700;
 }
 
 
@@ -770,7 +770,7 @@ body {
     height: 90px;
     margin-top: 60px;
     padding: 20px;
-    background-color: var(--color-tercary);
+    background-color: var(--color-secundary);
     color: #FFF;
 }
 
@@ -840,7 +840,7 @@ body {
 
     .header .header-title {
         margin: 50px 0 30px 0;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .header .navbar {
@@ -938,7 +938,7 @@ body {
     }
 
     .catalog-page .banner-ctlg {
-        margin-top: -4px;
+        margin-top: -6px;
     }
 
     .catalog-page .catalog-text {
@@ -947,7 +947,7 @@ body {
     }
 
     .catalog-page .catalog-text .catalog-navbar {
-        width: 96%;
+        width: 90%;
     }
 
     .catalog-page .products .bags,
@@ -966,7 +966,7 @@ body {
     }
 
     .button-top {
-        bottom: 30px;
+        bottom: 10px;
     }
 
 
@@ -985,24 +985,27 @@ body {
 
     .contact-form {
         width: 80%;
-        margin-bottom: 50px;
+        margin-bottom: -32px;
     }
-    
+
     .contact-section .store-local {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 380px;
+        height: auto;
+        margin-bottom: 100px;
     }
   
     .contact-section .store-local img {
-        width: 95%;
+        width: 100%;
     }
 
     .store-local .informations {
         display: flex;
         flex-direction: column;
-        height: auto;
+        text-align: start;
+        height: 242px;
     }
 
     .store-local .informations .opening-hours {
