@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@400;700&display=swap');
 
 :root {
+    --background-color: #FFF; 
     --color-primary: #703b1c;
     --color-secundary: #482b1a;
     --color-tercary: #897853;
     scroll-behavior: smooth;
+}
+
+[data-theme='dark'] {
+    --backround-color: #000;
 }
 
 * {
@@ -62,8 +67,7 @@ body {
 .header .navbar ul li a:hover {
     padding: 10px;
     border-radius: 6px;
-    background-color: var(--color-secundary);
-    color: #fff;
+    color: #d67e43;
 }
 
 
@@ -348,7 +352,7 @@ body {
 
 [data-animation="animation"].animation {
     position: fixed;
-    top: 20px;
+    top: 40px;
 }
 
 .catalog-text .catalog-navbar:hover {
