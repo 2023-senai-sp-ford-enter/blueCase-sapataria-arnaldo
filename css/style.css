@@ -38,7 +38,7 @@ body {
     border-bottom: 2px solid var(--color-primary);
 }
 
-.header .header-title {
+.header-title {
     margin-left: 40px;
     font-family: 'Dancing Script', cursive;
     font-size: 54px;
@@ -46,19 +46,19 @@ body {
     color: var(--color-primary);
 }
 
-.header .navbar {
+.navbar {
     width: 500px;
     margin-right: 50px;
 }
 
-.header .navbar ul {
+.navbar ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
 }
 
 
-.header .navbar ul li a {
+.navbar ul li a {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
@@ -67,11 +67,13 @@ body {
     cursor: pointer;
 }
 
-.header .navbar ul li a:hover {
+.navbar ul li a:hover {
     font-size: 21px;
     padding: 10px;
     color: #d67e43;
 }
+
+
 
 
 /****************************** HOME ******************************/
