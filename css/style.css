@@ -320,6 +320,12 @@ body {
     object-position: 0 81%;
 }
 
+ .collection img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+ }
+
 .catalog-page .catalog-text {
     display: flex;
     justify-content: center;
