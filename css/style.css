@@ -71,12 +71,13 @@ body {
     padding: 10px;
     color: #d67e43;
 }
+
 .navbar ul li button {
     display: flex;
     justify-content: center;
     border: none;
     font-size: 20px;
-    color: var(--color-primary  );
+    color: var(--color-primary);
     cursor: pointer;
 }
 
