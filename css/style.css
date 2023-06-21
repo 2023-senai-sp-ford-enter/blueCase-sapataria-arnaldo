@@ -352,6 +352,11 @@ body {
     transition: all 300ms;
 }
 
+[data-animation="animation"].animation {
+    position: fixed;
+    top: 20px;
+}
+
 .catalog-text .catalog-navbar:hover {
     scale: 1.06;
 }
@@ -448,10 +453,12 @@ body {
 }
 
 [data-animation="btn"].btn {
-    display: block;
     position: fixed;
-    top: 99px;
-    right: 610px;
+    top: 120px;
+    left: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     transition: all 500ms;
 }
