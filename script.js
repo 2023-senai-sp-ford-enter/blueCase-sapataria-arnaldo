@@ -16,7 +16,7 @@ document.addEventListener('scroll', () => {
 });
 
 
-// Função para alterar o tema
+/* Função para alterar o tema
 
 const rootElement = document.documentElement;
 
@@ -35,5 +35,6 @@ document.querySelector('#theme-btn').addEventListener('click', () => {
     }
 });
 
+*/
 
 
