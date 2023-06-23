@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página cadastro do site Sapataria do Arnaldo">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/02046696f9.js" crossorigin="anonymous"></script>
+
     <title>Sapataria do Aranaldo - Cadastro</title>
 </head>
 <body>
-    <header id="header" class="header">
+    <header class="header">
         <h1 class="header-title">Sapataria do Arnaldo</h1>
 
         <nav class="navbar">
@@ -27,8 +30,15 @@
                     <a href="contato.html">Contato</a>
                 </li>
                 <li>
-                    <a href="login.html">Login</a>
+                    <a href="login.html"><i class="fa-solid fa-user"></i></a>
                 </li>
+                <!-- 
+                    <li>
+                        <button id="theme-btn">
+                            <i class="fa-solid fa-circle-half-stroke"></i>
+                        </button>
+                    </li>
+                -->
             </ul>
         </nav>
     </header>
@@ -45,7 +55,7 @@
                 <input id="birthDate" type="date" name="birthDate" required>
 
                 <label for="cpf">CPF:</label>
-                <input id="cpf" type="tel" name="cpf" required>
+                <input id="cpf" type="text" name="cpf" pattern="[0-9]{11}" title="Digite 11 números" required>
 
                 <label for="address">Endereço:</label>
                 <input id="address" type="text" name="address" required>
@@ -53,8 +63,8 @@
                 <label for="email">Email:</label>
                 <input id="email" type="email" name="email" required>
 
-                <label for="number">Telefone:</label>
-                <input id="number" type="tel" name="number" required>
+                <label for="number">Telefone</label>
+                <input id="number" type="tel" name="number" pattern="[0-9]{11}" title="Digite 11 números" required>
 
                 <button class="register-button">Criar cadastro</button>
             </form>
@@ -79,6 +89,6 @@
         </div>
     </footer>
 
-    <script src="https://kit.fontawesome.com/02046696f9.js" crossorigin="anonymous"></script>
-    </body>
+    <script src="script.js"></script>
+</body>
 </html>

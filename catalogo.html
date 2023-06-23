@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página catálogo do site Sapataria do Arnaldo">   
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/02046696f9.js" crossorigin="anonymous"></script>
+
     <title>Sapataria do Arnaldo - Cátalogo</title>
 </head>
 <body>
     <header id="header" class="header">
-        <h1 class="header-title">-_- Sapataria do Arnaldo _-_</h1>
+        <h1 class="header-title">Sapataria do Arnaldo</h1>
+
         <nav class="navbar">
             <ul>
                 <li>
@@ -26,18 +30,26 @@
                     <a href="contato.html">Contato</a>
                 </li>
                 <li>
-                    <a href="login.html">Login</a>
+                    <a href="login.html"><i class="fa-solid fa-user"></i></a>
                 </li>
+                <!-- 
+                    <li>
+                        <button id="theme-btn">
+                            <i class="fa-solid fa-circle-half-stroke"></i>
+                        </button>
+                    </li>
+                -->
             </ul>
         </nav>
     </header>
     
     <main>
         <section class="catalog-page">
-            <img class="banner-ctlg" src="img/city.jpg" alt="Banner ilustrativo da página de login">
-
             <div class="catalog-text">
                 <h1>Catálogo</h1>
+                
+                <img class="promotion-banner" src="img/banner-inverno.jpg   " alt="Foto da coleção de inverno">
+                
                 <p>Conheça alguns dos nossos produtos</p>  
 
                 <nav class="catalog-navbar" id="navbar" data-animation="animation">
@@ -56,10 +68,6 @@
                     </ul>
                 </nav>
             </div>
-
-            <div >
-                <img src="img/banner-inverno.jpg" alt="Foto da coleção de inverno">
-            </div>
             
             <section class="products">
                 <div id="bags" class="bags">
@@ -67,7 +75,7 @@
                         <img src="img/bags-catalog/catalog-bag-1.jpg" loading="lazy" alt="foto de bolsa">
 
                         <div class="text-card">
-                            <p>Bolsa de couro marrom</p>
+                            <p class="description-paragraph">Bolsa de couro marrom</p>
                             <i class="fa-regular fa-heart"></i>
                         </div>
 
@@ -81,7 +89,7 @@
                         <img src="img/bags-catalog/catalog-bag-2.jpg" loading="lazy" alt="foto de bolsa">
 
                         <div class="text-card">
-                            <p>Bolsa de couro marrom</p>
+                            <p class="description-paragraph">Bolsa de couro marrom</p>
                             <i class="fa-regular fa-heart"></i>
                         </div>
                         
@@ -95,7 +103,7 @@
                         <img src="img/bags-catalog/catalog-bag-3.jpg" loading="lazy" alt="foto de bolsa">
 
                         <div class="text-card">
-                            <p>Bolsa de couro</p>
+                            <p class="description-paragraph">Bolsa de couro</p>
                             <i class="fa-regular fa-heart"></i>
                         </div>
                         
@@ -109,7 +117,7 @@
                         <img src="img/bags-catalog/catalog-bag-4.jpg" loading="lazy" alt="foto de bolsa">
 
                         <div class="text-card">
-                            <p>Bolsa de couro marrom</p>
+                            <p class="description-paragraph">Bolsa de couro marrom</p>
                             <i class="fa-regular fa-heart"></i>
                         </div>
                         
@@ -125,7 +133,7 @@
                         <img src="img/sap-brw.jpg" loading="lazy" alt="foto de sapato">
 
                         <div class="text-card">
-                            <p>Sapato de couro marrom</p>
+                            <p class="description-paragraph">Sapato de couro marrom</p>
                             <i class="fa-regular fa-heart"></i>
                         </div>
 
@@ -139,7 +147,7 @@
                         <img src="img/shoes-catalog/catalog-shoe-2.jpg" loading="lazy" alt="foto de sapato">
 
                         <div class="text-card">
-                            <p>Sapato de couro marrom</p>
+                            <p class="description-paragraph">Sapato de couro marrom</p>
                             <i class="fa-regular fa-heart"></i>
                         </div>
                         
@@ -153,7 +161,7 @@
                         <img src="img/shoes-catalog/catalog-shoe-3.jpg" loading="lazy" alt="foto de sapato">
 
                         <div class="text-card">
-                            <p>Sapato de couro</p>
+                            <p class="description-paragraph">Sapato de couro</p>
                             <i class="fa-regular fa-heart"></i>
                         </div>
                         
@@ -167,7 +175,7 @@
                         <img src="img/shoes-catalog/catalog-shoe-4.jpg" loading="lazy" alt="foto de sapato">
 
                         <div class="text-card">
-                            <p>Sapato de couro </p>
+                            <p class="description-paragraph">Sapato de couro </p>
                             <i class="fa-regular fa-heart"></i>
                         </div>
                         
@@ -183,7 +191,7 @@
                         <img src="img/capa-de-celular.webp" loading="lazy" alt="foto da capa de celular">
 
                         <div class="text-card">
-                            <p>Capa de Celular </p>
+                            <p class="description-paragraph">Capa de Celular </p>
                             <i class="fa-regular fa-heart"></i>
                         </div>
 
@@ -197,7 +205,7 @@
                         <img src="img/cinto.jpg" loading="lazy" alt="foto de cinto de couro">
 
                         <div class="text-card">
-                            <p>Cinto de couro </p>
+                            <p class="description-paragraph">Cinto de couro </p>
                             <i class="fa-regular fa-heart"></i>
                         </div>
                         
@@ -211,7 +219,7 @@
                         <img src="img/carteira.jpg" loading="lazy" alt="imagem de uma carteira de couro">
 
                         <div class="text-card">
-                            <p>Carteira de couro </p>
+                            <p class="description-paragraph">Carteira de couro </p>
                             <i class="fa-regular fa-heart"></i>
                         </div>
                         
@@ -225,7 +233,7 @@
                         <img src="img/pulseira.jpg" loading="lazy" alt="foto de uma pulseira">
 
                         <div class="text-card">
-                            <p>Pulseira de couro </p>
+                            <p class="description-paragraph">Pulseira de couro </p>
                             <i class="fa-regular fa-heart"></i>
                         </div>
                         
@@ -263,7 +271,6 @@
         </div>
     </footer>
 
-    <script src="https://kit.fontawesome.com/02046696f9.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>

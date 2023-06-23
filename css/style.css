@@ -1,21 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Josefin+Sans:wght@400;700&family=Pacifico&family=Urbanist:ital,wght@0,300;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 :root {
     --background-color: #FFF; 
     --color-primary: #703b1c;
     --color-secundary: #482b1a;
     --color-tercary: #897853;
+    --color-text: #e4e4e4;
     scroll-behavior: smooth;
 }
 
 [data-theme='dark'] {
     --backround-color: #000;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -34,15 +35,15 @@ body {
     align-items: center;
     width: 100%;
     height: 120px;
-    border-bottom: 2px solid var(--color-primary);
+    background-color: var(--color-secundary);
 }
 
 .header-title {
-    margin-left: 40px;
+    margin-left: 60px;
     font-family: 'Dancing Script', cursive;
-    font-size: 54px;
+    font-size: 56px;
     font-weight: bolder;
-    color: var(--color-primary);
+    color: var(--color-text);
 }
 
 .navbar {
@@ -60,7 +61,7 @@ body {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    color: var(--color-primary);
+    color: var(--color-text);
     transition: all 400ms;
 }
 
@@ -70,24 +71,57 @@ body {
     color: #d67e43;
 }
 
+.navbar ul li .bar {
+    width: 10px;
+    background-color: var(--color-text);
+    color: var(--color-text);
+}
+
 .navbar ul li button {
     display: flex;
     justify-content: center;
     border: none;
     font-size: 20px;
-    color: var(--color-primary  );
+    background-color: var(--color-secundary);
+    color: var(--color-text);
+    transition: all 500ms;
     cursor: pointer;
+}
+
+.navbar ul li button:hover {
+    margin-left: 10px;
+    color: #d67e43;
 }
 
 
 /****************************** HOME ******************************/
 
 
-.philosophy-section {
+.philosophy-section-main {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     width: 100%;
     height: auto;
+}
+
+.banner-ctlg {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    object-position: 50% 74%;
+    transition: all 500ms;
+}
+
+.banner-ctlg:hover {
+    width: 100%;
+    height: 600px;
+    object-position: 0 81%;
+}
+
+.philosophy-section {
+    display: flex;
+    justify-content: space-around;
 }
 
 .philosophy-text {
@@ -318,22 +352,7 @@ body {
     height: auto;
 }
 
-.banner-ctlg {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    object-position: 50% 74%;
-    border-bottom: 2px solid var(--color-primary);
-    transition: all 500ms;
-}
-
-.banner-ctlg:hover {
-    width: 100%;
-    height: 400px;
-    object-position: 0 81%;
-}
-
- .collection img {
+.collection img {
     width: 100%;
     height: 800px;
     object-fit: cover;
@@ -344,21 +363,34 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
-    margin-top: -230px;
+    height: 100vh;
+    margin: -250px 0 100px 0;
     font-size: 28px;
 }
 
 .catalog-page .catalog-text h1 {
-    font-size: 48px;
+    margin: 390px 0 60px;
+    font-family: 'Urbanist', sans-serif;    
+    font-size: 53px;
+    color: var(--color-secundary);
 }
 
-.catalog-page .catalog-text p {
-    margin: 20px;
+.promotion-banner {
+    width: 150%;
+    height: 470px;
+    margin: 0 0 20px 0;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 500ms;
 }
 
-.catalog-text .catalog-navbar {
-    width: 500px;
+.promotion-banner:hover {
+    transform: scale3d(1.03, 1.03, 1.6);
+    box-shadow: 0 0 10px #8f8d8d;
+}
+
+.catalog-navbar {
+    width: 450px;
     padding: 10px;
     border-radius: 10px;
     background-color: var(--color-primary);
@@ -370,27 +402,35 @@ body {
     top: 40px;
 }
 
-.catalog-text .catalog-navbar:hover {
+.catalog-navbar:hover {
     scale: 1.06;
 }
 
-.catalog-text .catalog-navbar ul {
+.catalog-navbar ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
 }
 
-.catalog-text .catalog-navbar ul li {
+.catalog-navbar ul li {
     transition: all 500ms;
 }
 
-.catalog-text .catalog-navbar ul li a {
+.catalog-navbar ul li a {
+    font-family: 'Urbanist', sans-serif;
     text-decoration: none;
     color: #fff;
 }
 
-.catalog-text .catalog-navbar ul li:hover {
+.catalog-navbar ul li:hover {
     scale: 1.08;
+}
+
+.catalog-page p {
+    margin: 20px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    color: #494848;
 }
 
 .products {
@@ -406,6 +446,7 @@ body {
     width: 100%;
     height: 80vh;
 }
+
 
 .products .bags .card img,
 .products .shoes .card img,
@@ -433,6 +474,7 @@ body {
 .products .others .card .text-card p {
     width: 200px;
     margin: 10px 0 10px 0;
+    color: var(--color-text);
 }
 
 .products .bags .card .text-card i,
@@ -903,6 +945,10 @@ body {
         margin: 80px 0 604px 0;
     }
 
+    .philosophy-section-main .banner-ctlg {
+        margin-top: 28px;
+    }
+
     .philosophy-section .gallery {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
@@ -961,10 +1007,6 @@ body {
 
     .catalog-page {
         margin-top: 34px;
-    }
-
-    .catalog-page .banner-ctlg {
-        margin-top: -6px;
     }
 
     .catalog-page .catalog-text {
