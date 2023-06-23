@@ -30,6 +30,9 @@ body {
 
 
 .header {
+    position: relative;
+    z-index: 10;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -124,15 +127,9 @@ body {
     justify-content: space-around;
 }
 
-.philosophy-text {
-    width: 600px;
-    height: 400px;
-    margin-top: 100px;
-}
-
 .philosophy-text .philosophy-title {
-    text-align: center;
     padding: 12px;
+    text-align: center;
     font-size: 23px;
     border-radius: 6px 6px 0 0;
     background-color: var(--color-primary);
@@ -140,15 +137,22 @@ body {
 }
 
 .philosophy-about {
-    margin: 0 0 14px 0;
+    width: 600px;
+    height: 400px;
+    margin: 100px 0 14px 0;
     padding: 18px;
     border-radius: 0 0 6px 6px;
     background-color: #F8F1F1;
 }
 
+.philosophy-about .data {
+    font-size: 40px;
+    color: var(--color-primary);
+}
+
 .philosophy-about p {
     margin-bottom: 8px;
-    line-height: 20px;
+    line-height: 28px;
     word-spacing: 3px;
     letter-spacing: 1px;
 }
@@ -263,10 +267,10 @@ body {
 
 
 .about-text {
-    width: 100%;
-    height: auto;
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
+    height: auto;
     margin: 80px 0 -70px 0;   
 }
 
@@ -558,6 +562,7 @@ body {
     width: 100%;
     height: 30px;
     margin-bottom: 18px;
+    padding-left: 10px;
     border: none;
     border-radius: 5px;
 }
@@ -566,6 +571,7 @@ body {
     width: 100%;
     height: 32px;
     margin-bottom: 18px;
+    padding-left: 10px;
     border: none;
     border-radius: 5px;
 }
@@ -574,6 +580,7 @@ body {
     width: 100%;
     height: 70px;
     margin-bottom: 18px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     resize: none;
@@ -582,7 +589,6 @@ body {
 .contact-section .contact-form .contact-button {
     width: 100%;
     height: 40px;
-    padding: 6px;
     font-size: 20px;
     border-radius: 5px;
     border: none;   
@@ -650,7 +656,7 @@ body {
 
 .login-img {
     width: 100%;
-    height: 80vh;
+    height: 77.6vh;
     object-fit: cover;
     object-position: 0 85%;
     opacity: 0.4;
