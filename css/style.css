@@ -945,6 +945,10 @@ body {
         margin: 80px 0 604px 0;
     }
 
+    .philosophy-section-main .banner-ctlg {
+        margin-top: 28px;
+    }
+
     .philosophy-section .gallery {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
@@ -1003,10 +1007,6 @@ body {
 
     .catalog-page {
         margin-top: 34px;
-    }
-
-    .catalog-page .banner-ctlg {
-        margin-top: -6px;
     }
 
     .catalog-page .catalog-text {
