@@ -127,15 +127,9 @@ body {
     justify-content: space-around;
 }
 
-.philosophy-text {
-    width: 600px;
-    height: 400px;
-    margin-top: 100px;
-}
-
 .philosophy-text .philosophy-title {
-    text-align: center;
     padding: 12px;
+    text-align: center;
     font-size: 23px;
     border-radius: 6px 6px 0 0;
     background-color: var(--color-primary);
@@ -143,15 +137,22 @@ body {
 }
 
 .philosophy-about {
-    margin: 0 0 14px 0;
+    width: 600px;
+    height: 400px;
+    margin: 100px 0 14px 0;
     padding: 18px;
     border-radius: 0 0 6px 6px;
     background-color: #F8F1F1;
 }
 
+.philosophy-about .data {
+    font-size: 40px;
+    color: var(--color-primary);
+}
+
 .philosophy-about p {
     margin-bottom: 8px;
-    line-height: 20px;
+    line-height: 28px;
     word-spacing: 3px;
     letter-spacing: 1px;
 }
@@ -266,10 +267,10 @@ body {
 
 
 .about-text {
-    width: 100%;
-    height: auto;
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
+    height: auto;
     margin: 80px 0 -70px 0;   
 }
 
