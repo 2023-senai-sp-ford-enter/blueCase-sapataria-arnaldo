@@ -897,14 +897,23 @@ body {
 }
 
 
+/*************************** CARRINHO ***************************/
+
+.carrinho {
+    display: contents;
+    justify-content: center;
+    flex-direction: row;
+    background-color: yellowgreen;
+    width: 30%;
+    height: 100vh;
+}
 /****************************** RESPONSIVIDADE  ******************************/
 
-
 @media (max-width: 420px) {
-
+    
     /****************************** HEADER ******************************/
-
-
+    
+    
     .header {
         display: flex;
         flex-direction: column;
