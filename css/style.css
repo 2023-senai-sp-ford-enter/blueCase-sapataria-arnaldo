@@ -158,8 +158,8 @@ body {
 }
 
 .gallery img {
-    width: 400px;
-    height: 500px;
+    width: 580px;
+    height: 680px;
 }
 
 
@@ -495,6 +495,7 @@ body {
     background-color: var(--color-primary);
     color: #fff;
 }
+
 
 .button-top {
     display: none;
