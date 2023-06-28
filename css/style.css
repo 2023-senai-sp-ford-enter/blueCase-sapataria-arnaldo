@@ -856,6 +856,16 @@ body {
     animation: 1s openShoppingCart  none ease;
 }
 
+
+/****************************** NOVA SENHA ******************************/
+
+
+
+
+
+/****************************** ANIMAÇÕES ******************************/
+
+
 @keyframes openShoppingCart {
     0% {
         width: 0;
@@ -873,18 +883,14 @@ body {
     }
     
     30% {
+        transform: translateY(-14px);
         transform: rotate(-8deg);
         font-size: 22px;
     }
     
-    40% {
-        transform: translateY(-14px);
-        transform: rotate(10deg);
-    }
-
-
     60% {
         transform: translateY(-12px);
+        transform: rotate(10deg);
     }
 
     100% {
