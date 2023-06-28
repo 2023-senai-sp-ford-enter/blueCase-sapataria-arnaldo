@@ -483,6 +483,13 @@ body {
     margin-top: 10px;
 }
 
+.products .bags .card .text-card i.active-heart,
+.products .shoes .card .text-card i.active-heart,
+.products .others .card .text-card i.active-heart {
+    animation: 1s heartAnimation ease;
+
+}
+
 .products .bags .card .shopping,
 .products .shoes .card .shopping,
 .products .others .card .shopping {
@@ -835,13 +842,56 @@ body {
     background-color: #ff6700;
 }
 
-.car-shopping {
+.shopping-cart {
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
-    width: 40%;
+    width: 30%;
     height: 124%;
-    background-color: #000;
+    background-color: #dddddd;
+}
+
+.shopping-cart.active {
+    display: block;
+    animation: 1s openShoppingCart  none ease;
+}
+
+@keyframes openShoppingCart {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes heartAnimation {
+    20% {
+        transform: translateY(-10px);
+        font-size: 20px;
+    }
+    
+    30% {
+        transform: rotate(-8deg);
+        font-size: 22px;
+    }
+    
+    40% {
+        transform: translateY(-14px);
+        transform: rotate(10deg);
+    }
+
+
+    60% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: rotate(0);
+        scale: 1;
+    }
 }
 
 
