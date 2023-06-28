@@ -487,7 +487,6 @@ body {
 .products .shoes .card .text-card i.active-heart,
 .products .others .card .text-card i.active-heart {
     animation: 1s heartAnimation ease;
-
 }
 
 .products .bags .card .shopping,

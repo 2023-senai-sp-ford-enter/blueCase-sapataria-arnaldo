@@ -1,3 +1,5 @@
+//Função para o menu acompanhar o rolamento da página 
+
 const navbar = document.getElementById('navbar');
 const btnTop = document.getElementById('btn-top');
 
@@ -34,6 +36,8 @@ document.addEventListener('scroll', () => {
     })
 */
 
+// Função para abrir e fechar o menu
+
 const buttonShoppingCart = document.querySelector('#shopping-cart');
 
 buttonShoppingCart.addEventListener('click', () => {
@@ -42,10 +46,13 @@ buttonShoppingCart.addEventListener('click', () => {
     menuShoppingCart.classList.toggle('active');
 });
 
+//Função para adicionar uma animação ao favoritar produtos
 
 const heartIcon = document.querySelector('#heart-icon')
 
 heartIcon.addEventListener('click', () => {
     heartIcon.classList.add('active-heart')
 })
+
+// Função para adicionar itens ao carrinho (em processo)
 
