@@ -835,6 +835,15 @@ body {
     background-color: #ff6700;
 }
 
+.car-shopping {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 124%;
+    background-color: #000;
+}
+
 
 /****************************** FOOTER  ******************************/
 
