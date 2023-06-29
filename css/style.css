@@ -844,7 +844,7 @@ body {
     top: 0;
     right: 0;
     width: 40%;
-    height: 124%;
+    height: 70%;
     color: #000;
     background-color: #cccccc;
     display: flex;
@@ -855,55 +855,48 @@ body {
 .car-title-box {
     background-color: #fff;
     width: 100%;
-    height: 10%;
+    height: auto;
     text-align: center;
     line-height: 2.0;
 }
 .car-title {
     font-size: 2.5rem;
+    color: var(--color-primary);
 }
-.product-example {
+.car-body {
     width: 100%;
     height: auto;
-    display: flex;
-    justify-content: left;
-    flex-direction: row;
-    line-height: 1.4;
-    background-color: var(--color-primary);
-    padding: 10px;
+    background-color: #ccc;
+    text-align: center;
 }
-.product-name {
-    color: #fff;
-    text-align: left;
-    margin: none;
-}    
-.product-example-img {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    margin-bottom: 0;
+.car-body-message {
+    padding-top: 15%;
+    font-size: 3rem;
+    color: #8f8d8d ;
 }
-.product-article {
-    width: 100%;
-    height: auto;
+.car-article {
     display: flex;
     flex-direction: column;
-    justify-content: baseline;
-    text-align: left;
-    padding-top: 0;
-    line-height: 1.4;
+}
+.car-article p {
+    margin-top: 15%;
+    margin-bottom: 10%;
+    font-size: 1.5rem;
+    color: #494848;
+}
+.button-car {
+    width: 155px;
+    height: 55px;
     background-color: var(--color-primary);
+    border-color: var(--color-secundary);
+    border-radius: 20px;
+    color: var(--background-color);
+    margin-left: 38%;
+    text-align: center;
+    line-height: 2.0;
+    font-size: 2rem;
+    text-decoration: none;
 }
-.product-article p {
-    color: var(--color-text);
-}
-.product-article2 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-
-
 /****************************** FOOTER  ******************************/
 
 
