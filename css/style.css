@@ -483,6 +483,12 @@ body {
     margin-top: 10px;
 }
 
+.products .bags .card .text-card i.active-heart,
+.products .shoes .card .text-card i.active-heart,
+.products .others .card .text-card i.active-heart {
+    animation: 1s heartAnimation ease;
+}
+
 .products .bags .card .shopping,
 .products .shoes .card .shopping,
 .products .others .card .shopping {
@@ -835,11 +841,13 @@ body {
     background-color: #ff6700;
 }
 
+/****************************** CARRINHO ******************************/
 
-/****************************** CARRINHO  ******************************/
 
-
-.car-shopping {
+.shopping-cart {
+    display: none;
+    justify-content: baseline;
+    flex-direction: column;
     position: absolute;
     top: 0;
     right: 0;
@@ -896,6 +904,60 @@ body {
     line-height: 2.0;
     font-size: 2rem;
     text-decoration: none;
+=======
+    width: 30%;
+    height: 123%;
+    padding: 20px;
+    background-color: #cccccc;
+    color: #000;
+}
+
+.shopping-cart.active {
+    display: block;
+    animation: 1s openShoppingCart  none ease;
+}
+
+
+/****************************** NOVA SENHA ******************************/
+
+
+
+
+
+/****************************** ANIMAÇÕES ******************************/
+
+
+@keyframes openShoppingCart {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes heartAnimation {
+    20% {
+        transform: translateY(-10px);
+        font-size: 20px;
+    }
+    
+    30% {
+        transform: translateY(-14px);
+        transform: rotate(-8deg);
+        font-size: 22px;
+    }
+    
+    60% {
+        transform: translateY(-12px);
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0);
+        scale: 1;
+    }
 }
 /****************************** FOOTER  ******************************/
 
