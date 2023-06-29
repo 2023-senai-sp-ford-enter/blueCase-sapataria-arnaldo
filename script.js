@@ -46,10 +46,10 @@ buttonShoppingCart.addEventListener('click', () => {
   menuShoppingCart.classList.toggle('active');
 });
 
-//Função para adicionar uma animações
+//Função para adicionar animação
 
-const heartIcon = document.querySelector('#heart-icon');
+const heartIcon = document.querySelectorAll('#heart-icon');
 
 heartIcon.addEventListener('click', () => {
-  heartIcon.classList.add('active-heart');
+  heartIcon.classList.toggle('active-heart');
 });

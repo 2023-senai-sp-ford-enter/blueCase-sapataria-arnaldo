@@ -43,7 +43,7 @@ body {
 
 .header-title {
     margin-left: 60px;
-    font-family: 'Josefin Sans', sans-serif;
+    font: 'Josefin Sans', sans-serif;
     font-size: 42px;
     color: var(--color-text);
 }
@@ -63,8 +63,8 @@ body {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    color: var(--color-text);
     transition: all 400ms;
+    color: var(--color-text);
 }
 
 .navbar ul li a:hover {
@@ -84,10 +84,10 @@ body {
     justify-content: center;
     border: none;
     font-size: 20px;
-    background-color: var(--color-secundary);
-    color: var(--color-text);
     transition: all 500ms;
     cursor: pointer;
+    background-color: var(--color-secundary);
+    color: var(--color-text);
 }
 
 .navbar ul li button:hover {
@@ -214,15 +214,15 @@ body {
     width: 450px;
 }
 
-.shoeshop-history .history-title,
-.arnaldo-history .history-title {
+.history-title,
+.history-title {
     text-align: center;
     padding: 12px;
     color: var(--color-primary);
 }
 
-.shoeshop-history .shoeshop-text,
-.arnaldo-history .arnaldo-text {
+.shoeshop-text,
+.arnaldo-text {
     margin: 0 0 14px 0;
     padding: 18px;
     transition: all 100ms;
@@ -358,7 +358,7 @@ body {
     object-fit: cover;
  }
 
-.catalog-page .catalog-text {
+.catalog-text {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -390,7 +390,7 @@ body {
 }
 
 .catalog-navbar {
-    width: 450px;
+    width: 500px;
     padding: 10px;
     border-radius: 10px;
     background-color: var(--color-primary);
@@ -412,18 +412,15 @@ body {
     list-style: none;
 }
 
-.catalog-navbar ul li {
-    transition: all 500ms;
-}
-
 .catalog-navbar ul li a {
     font-family: 'Urbanist', sans-serif;
     text-decoration: none;
+    transition: all 500ms;
     color: #fff;
 }
 
-.catalog-navbar ul li:hover {
-    scale: 1.08;
+.catalog-navbar ul li a:hover {
+    color: #cd590a;
 }
 
 .catalog-page p {
@@ -437,9 +434,10 @@ body {
     width: 100%;
 }
 
-.products .bags,
-.products .shoes,
-.products .others {
+.jacket,
+.bags,
+.shoes,
+.others {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -447,10 +445,10 @@ body {
     height: 80vh;
 }
 
-
-.products .bags .card img,
-.products .shoes .card img,
-.products .others .card img {
+.jacket .card img,
+.bags .card img,
+.shoes .card img,
+.others .card img {
     width: 320px;
     height: 320px;
     margin-bottom: 10px;
@@ -459,9 +457,10 @@ body {
     background-color: #f0f0f0;
 }   
 
-.products .bags .card .text-card,
-.products .shoes .card .text-card,
-.products .others .card .text-card {
+.jacket .card .text-card,
+.bags .card .text-card,
+.shoes .card .text-card,
+.others .card .text-card {
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -469,29 +468,33 @@ body {
     color: #fff;
 } 
 
-.products .bags .card .text-card p,
-.products .shoes .card .text-card p,
-.products .others .card .text-card p {
+.jacket  .card .text-card p,
+.bags .card .text-card p,
+.shoes .card .text-card p,
+.others .card .text-card p {
     width: 200px;
     margin: 10px 0 10px 0;
     color: var(--color-text);
 }
 
-.products .bags .card .text-card i,
-.products .shoes .card .text-card i,
-.products .others .card .text-card i {
+.jacket .card .text-card i,
+.bags .card .text-card i,
+.shoes .card .text-card i,
+.others .card .text-card i {
     margin-top: 10px;
 }
 
-.products .bags .card .text-card i.active-heart,
-.products .shoes .card .text-card i.active-heart,
-.products .others .card .text-card i.active-heart {
+.jacket .card .text-card i.active-heart,
+.bags .card .text-card i.active-heart,
+.shoes .card .text-card i.active-heart,
+.others .card .text-card i.active-heart {
     animation: 1s heartAnimation ease;
 }
 
-.products .bags .card .shopping,
-.products .shoes .card .shopping,
-.products .others .card .shopping {
+.jacket .card .shopping,
+.bags .card .shopping,
+.shoes .card .shopping,
+.others .card .shopping {
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -499,7 +502,6 @@ body {
     background-color: var(--color-primary);
     color: #fff;
 }
-
 
 .button-top {
     display: none;
@@ -510,6 +512,7 @@ body {
 }
 
 .button-top a {
+    padding: 14px;
     font-size: 20px;
     color: #fff;
 }
@@ -534,7 +537,7 @@ body {
     justify-content: space-evenly;
 }
 
-.contact-section .contact-form {
+.contact-form {
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -595,10 +598,10 @@ body {
     font-size: 20px;
     border-radius: 5px;
     border: none;   
-    background-color: #cd590a;
-    color: #fff;
     transition: all 500ms;
     cursor: pointer;
+    background-color: #cd590a;
+    color: #fff;
 }
 
 .contact-section .contact-form .contact-button:hover {
@@ -714,12 +717,11 @@ body {
     margin-top: 55px;
     border: none;
     border-radius: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #cd590a;
-    color: #fff;
+    font: 18px bold;
     transition: all 600ms;
     cursor: pointer;
+    background-color: #cd590a;
+    color: #fff;
 }
 
 .div-form button:hover {
@@ -738,8 +740,8 @@ body {
 .div-form .register {
     margin-top: 22px;
     text-decoration: none;
-    color: #e9e1d1;
     transition: all 500ms;
+    color: #e9e1d1;
 }
 
 .button-top {
@@ -830,10 +832,10 @@ body {
     font-size: 20px;
     border-radius: 5px;
     border: none;   
-    background-color: #cd590a;
-    color: #fff;
     transition: all 500ms;
     cursor: pointer;
+    background-color: #cd590a;
+    color: #fff;
 }
 
 .register-section .register-form .register-button:hover {
@@ -867,43 +869,81 @@ body {
 /****************************** NOVA SENHA ******************************/
 
 
-
-
-
-/****************************** ANIMAÇÕES ******************************/
-
-
-@keyframes openShoppingCart {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 30%;
-    }
+.new-passwod-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 78vh;
 }
 
-@keyframes heartAnimation {
-    20% {
-        transform: translateY(-10px);
-        font-size: 20px;
-    }
-    
-    30% {
-        transform: translateY(-14px);
-        transform: rotate(-8deg);
-        font-size: 22px;
-    }
-    
-    60% {
-        transform: translateY(-12px);
-        transform: rotate(10deg);
-    }
+.new-password-form {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 440px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--color-primary);
+}
 
-    100% {
-        transform: rotate(0);
-        scale: 1;
-    }
+.new-password-form h1 {
+    margin: 20px 0 10px 0;
+    text-align: center;
+    font-size: 40px;
+    color: #FFF;
+}
+
+.new-password-form label {
+    margin: 20px 0 3px 10px;
+    font-size: 24px;
+    color: #FFF;
+}
+
+.new-password-form input {
+    width: 320px;
+    height: 32px;
+    margin: 0 auto;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.new-password-form button {
+    width: 320px;
+    height: 36px;
+    margin: 45px auto 0;
+    border: none;
+    border-radius: 5px;
+    font: 18px;
+    transition: all 500ms;
+    background-color: #cd590a;
+    color: #FFF;
+}
+
+.new-password-form button:hover {
+    box-shadow: 0 0 4px #d85d0a;
+    background-color: #ff6700;
+}
+
+.complement {
+    display: none;
+    align-items: center;
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+    right: 36.2%;
+    width: 600px;
+}
+
+.img-background {
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 78vh; 
+    object-fit: cover;
+    object-position: 50% 80%;
+    opacity: 0.5;
 }
 
 
@@ -969,6 +1009,50 @@ body {
 #footer-login.footer-page {
     margin-top: 0;
 }
+
+#footer-password.footer-page {
+    position: absolute;
+    bottom: 0;
+} 
+
+
+/****************************** ANIMAÇÕES ******************************/
+
+
+@keyframes openShoppingCart {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes heartAnimation {
+    20% {
+        transform: translateY(-10px);
+        font-size: 20px;
+    }
+    
+    30% {
+        transform: translateY(-14px);
+        transform: rotate(-8deg);
+        font-size: 22px;
+    }
+    
+    60% {
+        transform: translateY(-12px);
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0);
+        scale: 1;
+    }
+}
+
+
 
 
 /****************************** RESPONSIVIDADE  ******************************/
