@@ -3,18 +3,18 @@
 const navbar = document.getElementById('navbar');
 const btnTop = document.getElementById('btn-top');
 
-function navbarElement (posicao) {
-    if (posicao > navbar.offsetTop && posicao > btnTop.offsetTop) {
-        navbar.classList.add('animation');
-        btnTop.classList.add('btn')
-    } else {
-        navbar.classList.remove('animation');
-        btnTop.classList.remove('btn');
-    }
+function navbarElement(posicao) {
+  if (posicao > navbar.offsetTop && posicao > btnTop.offsetTop) {
+    navbar.classList.add('animation');
+    btnTop.classList.add('btn')
+  } else {
+    navbar.classList.remove('animation');
+    btnTop.classList.remove('btn');
+  }
 }
 
 document.addEventListener('scroll', () => {
-    navbarElement(window.scrollY);
+  navbarElement(window.scrollY);
 });
 
 /* Função para alterar o tema
@@ -41,18 +41,15 @@ document.addEventListener('scroll', () => {
 const buttonShoppingCart = document.querySelector('#shopping-cart');
 
 buttonShoppingCart.addEventListener('click', () => {
-    const menuShoppingCart = document.querySelector('.shopping-cart');
-    
-    menuShoppingCart.classList.toggle('active');
+  const menuShoppingCart = document.querySelector('.shopping-cart');
+
+  menuShoppingCart.classList.toggle('active');
 });
 
-//Função para adicionar uma animação ao favoritar produtos
+//Função para adicionar uma animações
 
-const heartIcon = document.querySelector('#heart-icon')
+const heartIcon = document.querySelector('#heart-icon');
 
 heartIcon.addEventListener('click', () => {
-    heartIcon.classList.add('active-heart')
-})
-
-// Função para adicionar itens ao carrinho (em processo)
-
+  heartIcon.classList.add('active-heart');
+});
