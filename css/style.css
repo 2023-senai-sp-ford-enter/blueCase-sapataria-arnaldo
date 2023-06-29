@@ -848,67 +848,61 @@ body {
 
 .shopping-cart {
     display: none;
-    justify-content: baseline;
     flex-direction: column;
+    justify-content: baseline;
     position: absolute;
     top: 0;
     right: 0;
     width: 40%;
     height: 70%;
-    color: #000;
-    background-color: #cccccc;
-    display: flex;
-    justify-content: baseline;
-    flex-direction: column;
     margin-top: 120px;
+    background-color: #cccccc;
+    color: #000;
 }
+
 .car-title-box {
-    background-color: #fff;
     width: 100%;
     height: auto;
     text-align: center;
     line-height: 2.0;
+    background-color: #fff;
 }
+
 .car-title {
     font-size: 2.5rem;
     color: var(--color-primary);
 }
+
 .car-body {
     width: 100%;
     height: auto;
-    background-color: #ccc;
     text-align: center;
+    background-color: #ccc;
 }
+
 .car-body-message {
     padding-top: 15%;
     font-size: 3rem;
-    color: #8f8d8d ;
+    color: #8f8d8d;
 }
+
 .car-article {
     display: flex;
     flex-direction: column;
 }
+
 .car-article p {
     margin-top: 15%;
     margin-bottom: 10%;
     font-size: 1.5rem;
     color: #494848;
-}
+} 
+
 .button-car {
-    width: 155px;
-    height: 55px;
-    background-color: var(--color-primary);
-    border-color: var(--color-secundary);
-    border-radius: 20px;
-    color: var(--background-color);
-    margin-left: 38%;
+    border-radius: 12px;
     text-align: center;
-    line-height: 2.0;
     font-size: 2rem;
     text-decoration: none;
-=======
-    width: 30%;
-    height: 123%;
     padding: 20px;
     background-color: #cccccc;
     color: #000;
