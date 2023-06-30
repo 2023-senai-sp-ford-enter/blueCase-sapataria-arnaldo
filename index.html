@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theme>
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página Home do site Sapataria do Arnaldo">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/02046696f9.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página Home do site Sapataria do Arnaldo">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/02046696f9.js" crossorigin="anonymous"></script>
 
-    <title>Sapataria do Arnaldo - Home</title>
+  <title>Sapataria do Arnaldo - Home</title>
 </head>
+
 <body>
-    <header class="header">
-        <h1 class="header-title">Sapataria do Arnaldo</h1>
+  <header class="header">
+    <h1 class="header-title">Sapataria do Arnaldo</h1>
 
         <nav class="navbar">
             <ul>
@@ -30,7 +31,12 @@
                     <a href="contato.html">Contato</a>
                 </li>
                 <li>
-                    <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>
+                    <button id="shopping-cart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
                 </li>
                 <!-- 
                     <li>
@@ -43,9 +49,9 @@
         </nav>
     </header>
 
-    <main>
-        <section class="philosophy-section-main">
-            <img class="banner-ctlg" src="img/city.jpg" alt="Banner ilustrativo da página de login">
+  <main>
+    <section class="philosophy-section-main">
+      <img class="banner-ctlg" src="img/city.jpg" alt="Banner ilustrativo da página de login">
 
             <div class="philosophy-section ">
                 <div class="philosophy-text">
@@ -66,26 +72,41 @@
                 </div>
             </div>
         </section>
-    </main>
+        
+        <section class="shopping-cart">
+            <div class="shopping-cart-text">
+                <h1>Carrinho</h1>
+                <h2>Seu carrinho esta vazio</h2>
 
-    <footer class="footer-page">
-        <address class="address">
-            <p>Rua Forte do Leme, 52 - São Paulo</p>
-            <p>Telefone: (11) 3371-1279</p>
-        </address>
+                <p>Clique aqui e conheça os nossos produtos!</p>
 
-        <div class="direct">
-            <p class="footer-title">Deixe sua marca.</p>
-            <p class="copyright">&copy; Direitos reservados BlueCase</p>
-        </div>
+                <button class="shopping-cart-btn">
+                    <a href="catalogo.html">Conheca as novidades</a>
+                </button>
+            </div>
+        </section>
+    </section>
+  </main>
 
-        <div class="icons">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-whatsapp"></i>
-        </div>
-    </footer>
+  <footer class="footer-page">
+    <address class="address">
+      <p>Rua Forte do Leme, 52 - São Paulo</p>
+      <p>Telefone: (11) 3371-1279</p>
+    </address>
 
-    <script src="script.js"></script>
+    <div class="direct">
+      <p class="footer-title">Deixe sua marca.</p>
+      <p class="copyright">&copy; Direitos reservados BlueCase</p>
+    </div>
+
+    <div class="icons">
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-whatsapp"></i>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
