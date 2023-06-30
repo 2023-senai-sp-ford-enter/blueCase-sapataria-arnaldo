@@ -1,16 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@400;700&display=swap');
-
-:root {
-    --color-primary: #703b1c;
-    --color-secundary: #482b1a;
-    --color-tercary: #897853;
-    scroll-behavior: smooth;
-}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Josefin+Sans:wght@400;700&family=Pacifico&family=Urbanist:ital,wght@0,300;0,700;1,400&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --background-color: #FFF; 
+    --color-primary: #703b1c;
+    --color-secundary: #482b1a;
+    --color-tercary: #897853;
+    --color-text: #e4e4e4;
+    scroll-behavior: smooth;
+}
+
+[data-theme='dark'] {
+    --backround-color: #000;
 }
 
 body {
@@ -24,110 +30,241 @@ body {
 
 
 .header {
+    position: relative;
+    z-index: 10;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 120px;
-    border-bottom: 2px solid var(--color-primary);
+    background-color: var(--color-secundary);
 }
 
-.header .header-title {
-    margin-left: 40px;
-    font-family: 'Dancing Script', cursive;
-    font-size: 54px;
-    font-weight: bolder;
-    color: var(--color-primary);
+.header-title {
+    margin-left: 60px;
+    font: 'Josefin Sans', sans-serif;
+    font-size: 42px;
+    color: var(--color-text);
 }
 
-.header .navbar {
+.navbar {
     width: 500px;
     margin-right: 50px;
 }
 
-.header .navbar ul {
+.navbar ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
 }
 
-.header .navbar ul li a {
+.navbar ul li a {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    color: var(--color-primary);
     transition: all 400ms;
+    color: var(--color-text);
 }
 
-.header .navbar ul li a:hover {
+.navbar ul li a:hover {
     padding: 10px;
     border-radius: 6px;
+    color: #d67e43;
+}
+
+.navbar ul li .bar {
+    width: 10px;
+    background-color: var(--color-text);
+    color: var(--color-text);
+}
+
+.navbar ul li button {
+    display: flex;
+    justify-content: center;
+    border: none;
+    font-size: 20px;
+    transition: all 500ms;
+    cursor: pointer;
     background-color: var(--color-secundary);
-    color: #fff;
+    color: var(--color-text);
+}
+
+.navbar ul li button:hover {
+    margin-left: 10px;
+    color: #d67e43;
 }
 
 
 /****************************** HOME ******************************/
 
 
+.philosophy-section-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+}
+
+.banner-ctlg {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    object-position: 50% 74%;
+    transition: all 500ms;
+}
+
+.banner-ctlg:hover {
+    width: 100%;
+    height: 600px;
+    object-position: 0 81%;
+}
+
 .philosophy-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.philosophy-text .philosophy-title {
+    padding: 12px;
+    text-align: center;
+    font-size: 23px;
+    border-radius: 6px 6px 0 0;
+    color: #EFEFEF;
+}
+
+.philosophy-about {
+    width: 600px;
+    height: 400px;
+    margin: 60px 0 14px 0;
+    padding: 18px;
+    border-radius: 0 0 6px 6px;
+}
+
+.philosophy-about .data {
+    font-size: 40px;
+    color: var(--color-primary);
+}
+
+.philosophy-about p {
+    margin-bottom: 8px;
+    line-height: 28px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+.gallery img {
+    width: 600px;
+    height: 750px;
+    margin-top: -50px;
+}
+
+
+/****************************** SOBRE NÓS ******************************/
+
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    margin: 80px 0 -70px 0;   
+}
+
+.arnaldo-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.shoeshop-history,
+.arnaldo-history {
     display: flex;
     justify-content: space-around;
     width: 100%;
     height: auto;
 }
 
-.philosophy-text {
-    width: 600px;
-    height: 400px;
-    margin-top: 100px;
+.shoeshop-history {
+    margin-bottom: 60px;
 }
 
-.philosophy-text .philosophy-title {
+.about-img img {
+    width: 700px;
+    height: 400px;
+    border-radius: 10px;
+    transition: all 300ms;
+    object-fit: cover;
+}
+
+.about-img img:hover {
+    scale: 1.01;
+    box-shadow: 0 0 10px #7e7a78;
+}
+
+.shoeshop {
+    width: 620px;
+}
+
+.shoeshop:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 450px;
+}
+
+.history-title,
+.history-title {
     text-align: center;
     padding: 12px;
-    font-size: 23px;
-    border-radius: 6px 6px 0 0;
-    background-color: #897853;
-    color: #EFEFEF;
+    color: var(--color-primary);
 }
 
-.philosophy-about {
+.shoeshop-text,
+.arnaldo-text {
     margin: 0 0 14px 0;
     padding: 18px;
-    border-radius: 0 0 6px 6px;
-    background-color: #F8F1F1;
+    transition: all 100ms;
 }
 
-.philosophy-about p {
+.shoeshop-history p,
+.arnaldo-history p {
     margin-bottom: 8px;
     line-height: 20px;
     word-spacing: 3px;
     letter-spacing: 1px;
 }
 
+.about-gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 10px;
+    width: 600px;
+    height: auto;
+} 
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 3.8vw);
-    grid-gap: 15px;
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 10px;
     width: 600px;
     height: 600px;
     margin-top: 100px;
     margin-bottom: 100px;
 } 
 
-.gallery img {
+.about-gallery img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .gallery__item--1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-column: 1/3;
+    grid-row: 1/3;
     transition: all 500ms;
 }
 
@@ -140,10 +277,8 @@ body {
 }
   
 .gallery__item--2 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-column: 3/5;
+    grid-row: 1/3;
     transition: all 500ms;
 }
 
@@ -152,10 +287,9 @@ body {
 }
   
 .gallery__item--3 {
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 6;
+    grid-column: 5/9;
+    grid-row: 1/6;
+    object-fit: cover;
     transition: all 500ms;
 }
 
@@ -163,15 +297,13 @@ body {
     border-radius: 0 10px 0 0;
 }
 
-.gallery__item--3:hover {
+.gallery__item--3:hover {    
     scale: 1.03;
 }
   
 .gallery__item--4 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 6;
+    grid-column: 1/5;
+    grid-row: 3/7;
     transition: all 500ms;
 }
 
@@ -180,10 +312,8 @@ body {
 }
   
 .gallery__item--5 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 6;
-    grid-row-end: 9;
+    grid-column: 1/5;
+    grid-row: 7/9;
     transition: all 500ms;
 }
 
@@ -196,10 +326,8 @@ body {
 }
   
 .gallery__item--6 {
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 6;
-    grid-row-end: 9;
+    grid-column: 5/9;
+    grid-row: 6/9;
     transition: all 500ms;
 }
 
@@ -209,87 +337,6 @@ body {
 
 .gallery__item--6:hover {
     scale: 1.03;
-}
-
-
-/****************************** SOBRE NÓS ******************************/
-
-
-.about-text {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 80px 0 -70px 0;   
-}
-
-.arnaldo-section {
-    display: flex;
-    flex-direction: column;
-}
-
-.about-img img {
-    width: 600px;
-    height: 848px;
-    border-radius: 10px;
-    transition: all 300ms;
-}
-
-.about-img img:hover {
-    scale: 1.01;
-    box-shadow: 0 0 10px #7e7a78;
-}
-
-.about-gallery {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 15px;
-    width: 600px;
-    height: auto;
-} 
-
-.about-gallery img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.shoeshop-history,
-.arnaldo-history {
-    width: 600px;
-    height: auto;
-}
-
-.shoeshop-history .history-title,
-.arnaldo-history .history-title {
-    text-align: center;
-    padding: 12px;
-    border-radius: 6px 6px 0 0;
-    background-color: #897853;
-    color: #EFEFEF;
-}
-
-.shoeshop-history .shoeshop-text,
-.arnaldo-history .arnaldo-text {
-    margin: 0 0 14px 0;
-    padding: 18px;
-    background-color: #F8F1F1;
-    border-radius: 0 0 6px 6px;
-    transition: all 100ms;
-}
-
-.shoeshop-history .shoeshop-text:hover,
-.arnaldo-history .arnaldo-text:hover {
-    box-shadow: 0 0 10px #cabbb0de;
-}
-
-.shoeshop-history p,
-.arnaldo-history p {
-    margin-bottom: 8px;
-    line-height: 20px;
-    word-spacing: 3px;
-    letter-spacing: 1px;
 }
 
 
@@ -305,41 +352,44 @@ body {
     height: auto;
 }
 
-.banner-ctlg {
+.collection img {
     width: 100%;
-    height: 200px;
+    height: 800px;
     object-fit: cover;
-    object-position: 50% 74%;
-    transition: all 500ms;
-}
+ }
 
-.banner-ctlg:hover {
-    width: 100%;
-    height: 400px;
-    object-position: 0 81%;
-}
-
-.catalog-page .catalog-text {
+.catalog-text {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
-    margin-top: -100px;
+    height: 100vh;
+    margin: -250px 0 100px 0;
     font-size: 28px;
 }
 
-.catalog-page .catalog-text p {
-    margin: 20px;
+.catalog-page .catalog-text h1 {
+    margin: 390px 0 60px;
+    font-family: 'Urbanist', sans-serif;    
+    font-size: 53px;
+    color: var(--color-secundary);
 }
 
-.catalog-page .catalog-text .fa-sharp {
-    margin: 30px 0 50px 0;
-    font-size: 50px;
-    color: #482b1a;
+.promotion-banner {
+    width: 150%;
+    height: 470px;
+    margin: 0 0 20px 0;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 500ms;
 }
 
-.catalog-text .catalog-navbar {
+.promotion-banner:hover {
+    transform: scale3d(1.03, 1.03, 1.6);
+    box-shadow: 0 0 10px #8f8d8d;
+}
+
+.catalog-navbar {
     width: 500px;
     padding: 10px;
     border-radius: 10px;
@@ -347,42 +397,47 @@ body {
     transition: all 300ms;
 }
 
-.catalog-text .catalog-navbar:hover {
+[data-animation="animation"].animation {
+    position: fixed;
+    top: 40px;
+}
+
+.catalog-navbar:hover {
     scale: 1.06;
 }
 
-[data-animation] {
-    transition: all .3s;
-}
-
-[data-animation="top"] {
-    transform: translate3d(0, -50px, 0);
-}
-
-[data-animation="top"].animation {
-    position: fixed;
-    top: 70px;
-    transform: translate(0, 0, 0);
-}
-
-.catalog-text .catalog-navbar ul {
+.catalog-navbar ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
 }
 
-.catalog-text .catalog-navbar ul li a{
+.catalog-navbar ul li a {
+    font-family: 'Urbanist', sans-serif;
     text-decoration: none;
+    transition: all 500ms;
     color: #fff;
+}
+
+.catalog-navbar ul li a:hover {
+    color: #cd590a;
+}
+
+.catalog-page p {
+    margin: 20px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    color: #494848;
 }
 
 .products {
     width: 100%;
 }
 
-.products .bags,
-.products .shoes,
-.products .others {
+.jacket,
+.bags,
+.shoes,
+.others {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -390,64 +445,87 @@ body {
     height: 80vh;
 }
 
-.products .bags .card img,
-.products .shoes .card img,
-.products .others .card img {
+.jacket .card img,
+.bags .card img,
+.shoes .card img,
+.others .card img {
     width: 320px;
     height: 320px;
+    margin-bottom: 10px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     background-color: #f0f0f0;
 }   
 
-.products .bags .card .text-card,
-.products .shoes .card .text-card,
-.products .others .card .text-card {
+.jacket .card .text-card,
+.bags .card .text-card,
+.shoes .card .text-card,
+.others .card .text-card {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    background-color: #897853;
+    background-color: var(--color-primary);
     color: #fff;
 } 
 
-.products .bags .card .text-card p,
-.products .shoes .card .text-card p,
-.products .others .card .text-card p {
+.jacket  .card .text-card p,
+.bags .card .text-card p,
+.shoes .card .text-card p,
+.others .card .text-card p {
     width: 200px;
     margin: 10px 0 10px 0;
+    color: var(--color-text);
 }
 
-.products .bags .card .text-card i,
-.products .shoes .card .text-card i,
-.products .others .card .text-card i {
+.jacket .card .text-card i,
+.bags .card .text-card i,
+.shoes .card .text-card i,
+.others .card .text-card i {
     margin-top: 10px;
 }
 
-.products .bags .card .shopping,
-.products .shoes .card .shopping,
-.products .others .card .shopping {
+.jacket .card .text-card i.active-heart,
+.bags .card .text-card i.active-heart,
+.shoes .card .text-card i.active-heart,
+.others .card .text-card i.active-heart {
+    animation: 1s heartAnimation ease;
+}
+
+.jacket .card .shopping,
+.bags .card .shopping,
+.shoes .card .shopping,
+.others .card .shopping {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     border-radius: 0 0 10px 10px;
-    background-color: #897853;
+    background-color: var(--color-primary);
     color: #fff;
 }
 
 .button-top {
-    position: fixed;
-    bottom: 100px;
-    right: 40px;
+    display: none;
     width: 50px;
     height: 50px;
     border: none;
-    border-radius: 50%;
     background-color: var(--color-primary);
 }
 
 .button-top a {
+    padding: 14px;
     font-size: 20px;
     color: #fff;
+}
+
+[data-animation="btn"].btn {
+    position: fixed;
+    top: 120px;
+    left: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 500ms;
 }
 
 
@@ -459,20 +537,20 @@ body {
     justify-content: space-evenly;
 }
 
-.contact-section .contact-form {
+.contact-form {
     display: flex;
     flex-direction: column;
     width: 400px;
     margin-top: 60px;
     padding: 20px;
     border-radius: 10px;
-    background-color: #897853;
+    background-color: var(--color-primary);
 }
 
 .contact-section .contact-form .form-title {
     display: flex;
     justify-content: center;
-    margin-bottom: 28px;
+    margin-bottom: 28px;    
     padding: 6px;
     font-size: 26px;
     color: #fff;
@@ -490,6 +568,7 @@ body {
     width: 100%;
     height: 30px;
     margin-bottom: 18px;
+    padding-left: 10px;
     border: none;
     border-radius: 5px;
 }
@@ -498,6 +577,7 @@ body {
     width: 100%;
     height: 32px;
     margin-bottom: 18px;
+    padding-left: 10px;
     border: none;
     border-radius: 5px;
 }
@@ -506,6 +586,7 @@ body {
     width: 100%;
     height: 70px;
     margin-bottom: 18px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     resize: none;
@@ -513,14 +594,18 @@ body {
 
 .contact-section .contact-form .contact-button {
     width: 100%;
-    height: 36px;
-    padding: 6px;
+    height: 40px;
     font-size: 20px;
     border-radius: 5px;
     border: none;   
-    background-color: var(--color-secundary);
-    color: #fff;
     transition: all 500ms;
+    cursor: pointer;
+    background-color: #cd590a;
+    color: #fff;
+}
+
+.contact-section .contact-form .contact-button:hover {
+    background-color: #ff6700;
 }
 
 .contact-section .store-local {
@@ -531,15 +616,17 @@ body {
     width: 580px;
     height: 452px;
     border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    object-position: 3 0% 60%;
 }
 
 .contact-section .store-local .informations {
     display: flex;
     justify-content: space-between;
-    width: 580px;
+    width: 100%;
     padding: 20px;
     border-radius: 0 0 10px 10px;
-    background-color: #897853;
+    background-color: var(--color-primary);
     color: #fff;
 }
 
@@ -550,23 +637,17 @@ body {
 
 .contact-section .store-local .informations .opening-hours h1,
 .contact-section .store-local .informations .address h1 {
-    border-bottom: 2px solid #fff;
+    font-weight: bold;
+    border-bottom: 2px solid #EFEFEF;
     margin-bottom: 8px;
 }
 
 .contact-section .store-local .informations .opening-hours p {
     width: 240px;
-    font-weight: bold;
-    color: #482b1a;
 }
 
 .contact-section .store-local .informations .address {
     text-align: end;
-}
-
-.contact-section .store-local .informations .address p {
-    font-weight: bold;
-    color: #482b1a;
 }
 
 
@@ -581,7 +662,7 @@ body {
 
 .login-img {
     width: 100%;
-    height: 80vh;
+    height: 77.6vh;
     object-fit: cover;
     object-position: 0 85%;
     opacity: 0.4;
@@ -600,7 +681,7 @@ body {
     width: 400px;
     height: 450px;
     border-radius: 10px;
-    background-color: var(--color-tercary);
+    background-color: var(--color-primary);
 }
 
 .div-form .login-title {
@@ -611,7 +692,7 @@ body {
 }
 
 .div-form label {
-    margin: 12px 0 3px -244px;
+    margin: 20px 0 3px -244px;
     font-size: 24px;
     color: #fff;
 }
@@ -619,48 +700,48 @@ body {
 .div-form input {
     width: 80%;
     height: 32px;
+    padding-left: 10px;
     border: none;
     border-radius: 5px;
+    transition: all 500ms;
+}
+
+.div-form input:focus {
+    scale: 1.02;
+    box-shadow: none;
 }
 
 .div-form button {
     width: 80%;
     height: 35px;
-    margin-top: 70px;
+    margin-top: 55px;
     border: none;
     border-radius: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--color-secundary);
+    font: 18px bold;
     transition: all 600ms;
     cursor: pointer;
+    background-color: #cd590a;
+    color: #fff;
 }
 
 .div-form button:hover {
     transform: scale(1.04);
-    box-shadow: 0 0 4px #fff;
+    box-shadow: 0 0 4px #d85d0a;
+    background-color: #ff6700;
 }
 
 .div-form .new-password {
-    margin: 10px 0 10px -150px;
+    margin: 14px 0 10px -150px;
     text-decoration: none;
-    color: #dfcba0;
+    color: #e9e1d1;
     transition: all 500ms;
-}
-
-.div-form .new-password:hover {
-    color: var(--color-secundary);
 }
 
 .div-form .register {
-    margin-top: 30px;
+    margin-top: 22px;
     text-decoration: none;
-    color: #dfcba0;
     transition: all 500ms;
-}
-
-.div-form .register:hover {
-    color: var(--color-secundary);
+    color: #e9e1d1;
 }
 
 .button-top {
@@ -697,7 +778,7 @@ body {
     margin-top: 100px;
     padding: 20px;
     border-radius: 10px;
-    background-color: #897853;
+    background-color: var(--color-primary);
 }
 
 .register-form .form-title {
@@ -751,12 +832,167 @@ body {
     font-size: 20px;
     border-radius: 5px;
     border: none;   
-    background-color: var(--color-secundary);
-    color: #fff;
+    transition: all 500ms;
     cursor: pointer;
+    background-color: #cd590a;
+    color: #fff;
+}
+
+.register-section .register-form .register-button:hover {
+    transform: scale3d(1.03, 1.06,  1.1);
+    background-color: #ff6700;
+}
+
+/****************************** CARRINHO ******************************/
+
+
+.shopping-cart {
+    display: none;
+    flex-direction: column;
+    justify-content: baseline;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 70%;
+    margin-top: 120px;
+    background-color: #cccccc;
+    color: #000;
+}
+
+.car-title-box {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    line-height: 2.0;
+    background-color: #fff;
+}
+
+.car-title {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+}
+
+.car-body {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #ccc;
+}
+
+.car-body-message {
+    padding-top: 15%;
+    font-size: 3rem;
+    color: #8f8d8d;
+}
+
+.car-article {
+    display: flex;
+    flex-direction: column;
+}
+
+.car-article p {
+    margin-top: 15%;
+    margin-bottom: 10%;
+    font-size: 1.5rem;
+    color: #494848;
+} 
+
+.button-car {
+    border-radius: 12px;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 20px;
+    background-color: #cccccc;
+    color: #000;
+}
+
+.shopping-cart.active {
+    display: block;
+    animation: 1s openShoppingCart  none ease;
 }
 
 
+/****************************** NOVA SENHA ******************************/
+
+
+.new-passwod-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 78vh;
+}
+
+.new-password-form {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 440px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--color-primary);
+}
+
+.new-password-form h1 {
+    margin: 20px 0 10px 0;
+    text-align: center;
+    font-size: 40px;
+    color: #FFF;
+}
+
+.new-password-form label {
+    margin: 20px 0 3px 10px;
+    font-size: 24px;
+    color: #FFF;
+}
+
+.new-password-form input {
+    width: 320px;
+    height: 32px;
+    margin: 0 auto;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.new-password-form button {
+    width: 320px;
+    height: 36px;
+    margin: 45px auto 0;
+    border: none;
+    border-radius: 5px;
+    font: 18px;
+    transition: all 500ms;
+    background-color: #cd590a;
+    color: #FFF;
+}
+
+.new-password-form button:hover {
+    box-shadow: 0 0 4px #d85d0a;
+    background-color: #ff6700;
+}
+
+.complement {
+    display: none;
+    align-items: center;
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+    right: 36.2%;
+    width: 600px;
+}
+
+.img-background {
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 78vh; 
+    object-fit: cover;
+    object-position: 50% 80%;
+    opacity: 0.5;
+}
 /****************************** FOOTER  ******************************/
 
 
@@ -768,7 +1004,7 @@ body {
     height: 90px;
     margin-top: 60px;
     padding: 20px;
-    background-color: var(--color-tercary);
+    background-color: var(--color-secundary);
     color: #FFF;
 }
 
@@ -820,15 +1056,58 @@ body {
     margin-top: 0;
 }
 
+#footer-password.footer-page {
+    position: absolute;
+    bottom: 0;
+} 
+
+
+/****************************** ANIMAÇÕES ******************************/
+
+
+@keyframes openShoppingCart {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes heartAnimation {
+    20% {
+        transform: translateY(-10px);
+        font-size: 20px;
+    }
+    
+    30% {
+        transform: translateY(-14px);
+        transform: rotate(-8deg);
+        font-size: 22px;
+    }
+    
+    60% {
+        transform: translateY(-12px);
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0);
+        scale: 1;
+    }
+}
+
+
+
 
 /****************************** RESPONSIVIDADE  ******************************/
 
-
 @media (max-width: 420px) {
-
+    
     /****************************** HEADER ******************************/
-
-
+    
+    
     .header {
         display: flex;
         flex-direction: column;
@@ -838,7 +1117,7 @@ body {
 
     .header .header-title {
         margin: 50px 0 30px 0;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .header .navbar {
@@ -873,6 +1152,10 @@ body {
     .philosophy-section .philosophy-text {
         width: 85%;
         margin: 80px 0 604px 0;
+    }
+
+    .philosophy-section-main .banner-ctlg {
+        margin-top: 28px;
     }
 
     .philosophy-section .gallery {
@@ -935,17 +1218,13 @@ body {
         margin-top: 34px;
     }
 
-    .catalog-page .banner-ctlg {
-        margin-top: -4px;
-    }
-
     .catalog-page .catalog-text {
         width: 85%;
         text-align: center;
     }
 
     .catalog-page .catalog-text .catalog-navbar {
-        width: 96%;
+        width: 90%;
     }
 
     .catalog-page .products .bags,
@@ -964,7 +1243,7 @@ body {
     }
 
     .button-top {
-        bottom: 30px;
+        bottom: 10px;
     }
 
 
@@ -983,24 +1262,27 @@ body {
 
     .contact-form {
         width: 80%;
-        margin-bottom: 50px;
+        margin-bottom: -32px;
     }
-    
+
     .contact-section .store-local {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 380px;
+        height: auto;
+        margin-bottom: 100px;
     }
   
     .contact-section .store-local img {
-        width: 95%;
+        width: 100%;
     }
 
     .store-local .informations {
         display: flex;
         flex-direction: column;
-        height: auto;
+        text-align: start;
+        height: 242px;
     }
 
     .store-local .informations .opening-hours {

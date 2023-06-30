@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
-    <title>Sapataria do Arnaldo - Home</title>
-</head>
-<body>
-    <header class="header">
-        <h1 class="header-title">-_- Sapataria do Arnaldo _-_</h1>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página Home do site Sapataria do Arnaldo">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/02046696f9.js" crossorigin="anonymous"></script>
 
-        <nav id="navbar" class="navbar mobile">
+  <title>Sapataria do Arnaldo - Home</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header-title">Sapataria do Arnaldo</h1>
+
+        <nav class="navbar">
             <ul>
                 <li>
                     <a href="index.html">Home</a>
@@ -29,81 +33,83 @@
                 <li>
                     <a href="login.html">Login</a>
                 </li>
+                <li>
+                    <button id="shopping-cart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </li>
+                  <!-- 
+                    <li>
+                        <button id="theme-btn">
+                            <i class="fa-solid fa-circle-half-stroke"></i>
+                        </button>
+                    </li>
+                      -->
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="philosophy-section">
+  <main>
+    <section class="philosophy-section-main">
+      <img class="banner-ctlg" src="img/city.jpg" alt="Banner ilustrativo da página de login">
 
-            <article class="philosophy-text">
-                <h1 class="philosophy-title">Filosofia de trabalho</h1>
-                
-                <div class="philosophy-about">
-                    <p>
-                        A filosofia de trabalho do Sr. Arnaldo é baseada em dois princípios fundamentais: comprometimento e excelência. Ele acredita que o compromisso genuíno é a chave para alcançar resultados extraordinários. Ele se dedica de corpo e alma a cada projeto, buscando constantemente maneiras de superar expectativas e entregar um trabalho excepcional.
-                    </p>
+            <div class="philosophy-section ">
+                <div class="philosophy-text">
                     
-                    <p>
-                        Além disso, o Sr. Arnaldo acredita que a excelência é um objetivo alcançável em todas as áreas da vida. Ele busca aprimorar suas habilidades constantemente, abraçando novos desafios e aprendendo com cada experiência. Sua abordagem meticulosa e atenção aos detalhes se refletem em tudo o que faz, desde projetos profissionais até tarefas diárias.
-                    </p>
-
-                    <p>
-                        Para o Sr. Arnaldo, o trabalho não é apenas uma obrigação, mas uma oportunidade de expressar sua criatividade e paixão. Ele vê cada tarefa como uma oportunidade de crescimento e busca constantemente maneiras de inovar e melhorar. Sua ética de trabalho incansável e sua determinação são o alicerce de seu sucesso, permitindo que ele supere desafios e alcance resultados notáveis.
-                    </p>
-                    
-                    <p>
-                        A filosofia de trabalho do Sr. Arnaldo inspira os que o rodeiam a se esforçarem para atingir a excelência em suas próprias vidas. Sua dedicação, comprometimento e busca incessante pela melhoria contínua são um exemplo vivo de como o trabalho pode ser gratificante e transformador. Seu lema é simples, mas poderoso: fazer o melhor em tudo o que se propõe a fazer, mantendo sempre a paixão e a determinação em cada empreendimento.
-                    </p>
+                    <div class="philosophy-about">
+                        <p>
+                            <span class="data">Desde 1974</span> a filosofia de trabalho do Sr. Arnaldo é baseada em dois princípios fundamentais: comprometimento e excelência. Ele acredita que o compromisso genuíno é a chave para alcançar resultados extraordinários. Ele se dedica de corpo e alma a cada projeto, buscando constantemente maneiras de superar expectativas e entregar um trabalho excepcional.
+                        </p>
+                        
+                        <p>
+                            Além disso, o Sr. Arnaldo acredita que a excelência é um objetivo alcançável em todas as áreas da vida. Ele busca aprimorar suas habilidades constantemente, abraçando novos desafios e aprendendo com cada experiência. Sua abordagem meticulosa e atenção aos detalhes se refletem em tudo o que faz, desde projetos profissionais até tarefas diárias.
+                        </p>
+                    </div>
                 </div>
-            </article>
-
-            <article class="gallery">
-                <figure class="gallery__item--1">
-                    <img class="item-gallery" src="img/gallery-home/shoe-1.jpg" loading="eager" alt="Sapato da galeria de imagens">
-                </figure>
-
-                <figure class="gallery__item--2">
-                    <img class="item-gallery" src="img/gallery-home/shoe-2.jpg" loading="eager" alt="Sapato da galeria de imagens">
-                </figure>
-
-                <figure class="gallery__item--3">
-                    <img class="item-gallery" src="img/gallery-home/shoe-3.png" loading="eager" alt="Sapato da galeria de imagens">
-                </figure>
-
-                <figure class="gallery__item--4">
-                    <img class="item-gallery" src="img/gallery-home/shoe-4.jpg" loading="eager" alt="Sapato da galeria de imagens">
-                </figure>
-
-                <figure class="gallery__item--5">
-                    <img class="item-gallery" src="img/gallery-home/shoe-5.jpg" loading="eager" alt="Sapato da galeria de imagens">
-                </figure>
-
-                <figure class="gallery__item--6">
-                    <img class="item-gallery" src="img/gallery-home/shoe-6.jpg" loading="eager" alt="Sapato da galeria de imagens">
-                </figure>
-            </article>
+                
+                <div class="gallery">
+                    <img class="item-gallery" src="img/home-banner2.jpg" loading="eager" alt="Sapato da galeria de imagens">
+                </div>
+            </div>
         </section>
-    </main>
+        
+        <section class=".shopping-cart">
+            <header class="car-title-box">
+                <h1 class="car-title">Carrinho</h1>
+            </header>
 
-    <footer class="footer-page">
-        <address class="address">
-            <p>Rua Forte do Leme, 52 - São Paulo</p>
-            <p>Telefone: (11) 3371-1279</p>
-        </address>
+            <div class="car-body">
+                <h1 class="car-body-message">Seu carrinho ainda está vazio</h1>
 
-        <div class="direct">
-            <p class="footer-title">Deixe sua marca.</p>
-            <p class="copyright">&copy; Direitos reservados BlueCase</p>
-        </div>
+                <article class="car-article">
+                    <p>Clique aqui e confira algun itens para encher</p>
+                </article>
+            </div>
 
-        <div class="icons">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-whatsapp"></i>
-        </div>
-    </footer>
+            <a class="button-car" href="catalogo.html">Comprar!</a>
+        </section>
+    </section>
+  </main>
 
-    <script src="https://kit.fontawesome.com/02046696f9.js" crossorigin="anonymous"></script>
+  <footer class="footer-page">
+    <address class="address">
+      <p>Rua Forte do Leme, 52 - São Paulo</p>
+      <p>Telefone: (11) 3371-1279</p>
+    </address>
+
+    <div class="direct">
+      <p class="footer-title">Deixe sua marca.</p>
+      <p class="copyright">&copy; Direitos reservados BlueCase</p>
+    </div>
+
+    <div class="icons">
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-whatsapp"></i>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
