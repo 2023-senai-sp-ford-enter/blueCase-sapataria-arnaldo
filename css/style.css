@@ -437,7 +437,8 @@ body {
 .jacket,
 .bags,
 .shoes,
-.others {
+.others,
+.boot {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -448,7 +449,8 @@ body {
 .jacket .card img,
 .bags .card img,
 .shoes .card img,
-.others .card img {
+.others .card img,
+.boot .card img {
     width: 320px;
     height: 320px;
     margin-bottom: 10px;
@@ -460,7 +462,8 @@ body {
 .jacket .card .text-card,
 .bags .card .text-card,
 .shoes .card .text-card,
-.others .card .text-card {
+.others .card .text-card,
+.boot .card .text-card {
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -471,7 +474,8 @@ body {
 .jacket  .card .text-card p,
 .bags .card .text-card p,
 .shoes .card .text-card p,
-.others .card .text-card p {
+.others .card .text-card p,
+.boot .card .text-card p {
     width: 200px;
     margin: 10px 0 10px 0;
     color: var(--color-text);
@@ -480,27 +484,40 @@ body {
 .jacket .card .text-card i,
 .bags .card .text-card i,
 .shoes .card .text-card i,
-.others .card .text-card i {
+.others .card .text-card i,
+.boot .card .text-card i {
     margin-top: 10px;
 }
 
 .jacket .card .text-card i.active-heart,
 .bags .card .text-card i.active-heart,
 .shoes .card .text-card i.active-heart,
-.others .card .text-card i.active-heart {
+.others .card .text-card i.active-heart,
+.boot .card .text-card i.active-heart {
     animation: 1s heartAnimation ease;
 }
 
 .jacket .card .shopping,
 .bags .card .shopping,
 .shoes .card .shopping,
-.others .card .shopping {
+.others .card .shopping,
+.boot .card .shopping {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     border-radius: 0 0 10px 10px;
     background-color: var(--color-primary);
     color: #fff;
+}
+
+.winter-collection {
+    display: flex;
+    flex-direction: column;
+}
+
+.winter-collection img {
+    width: 620px;
+    margin: 200px auto 0;
 }
 
 .button-top {
@@ -847,7 +864,7 @@ body {
 
 
 .shopping-cart {
-    display: flex;
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 0;
