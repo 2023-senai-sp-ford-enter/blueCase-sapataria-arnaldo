@@ -515,14 +515,6 @@ body {
     flex-direction: column;
 }
 
-.detail {
-    position: relative;
-    top: 245px;
-    left: 805px;
-    font-size: 70px;
-    color: var(--color-secundary);
-}
-
 .winter-collection img {
     width: 850px;
     margin: 200px auto 0;
@@ -886,8 +878,9 @@ body {
     top: 0;
     right: 0;
     width: 30%;
-    height: 109.8vh;
+    height: 86vh;
     margin-top: 120px;
+    border-radius: 0 0 0 10px;
     background-color: #cccccc;
     color: #000;
 }
@@ -963,7 +956,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 380px;
-    height: 440px;
+    height: 300px;
     padding: 20px;
     border-radius: 10px;
     background-color: var(--color-primary);
@@ -999,6 +992,7 @@ body {
     border-radius: 5px;
     font: 18px;
     transition: all 500ms;
+    cursor: pointer;
     background-color: #cd590a;
     color: #FFF;
 }
@@ -1199,6 +1193,15 @@ body {
         margin: 80px 0 604px 0;
     }
 
+    .philosophy-about {
+       width:  90%;
+    }
+
+    .gallery img {
+        width: 300px;
+        height: 400px;
+    }
+
     .philosophy-section-main .banner-ctlg {
         margin-top: 28px;
     }
@@ -1263,17 +1266,24 @@ body {
         margin-top: 34px;
     }
 
+    .promotion-banner {
+        width: 90%;
+    }
+
     .catalog-page .catalog-text {
         width: 85%;
         text-align: center;
     }
 
     .catalog-page .catalog-text .catalog-navbar {
-        width: 90%;
+        width: 100%;
+        font-size: 18px;
     }
 
+    .catalog-page .products .jacket,
     .catalog-page .products .bags,
     .catalog-page .products .shoes,
+    .catalog-page .products .boot,
     .catalog-page .products .others {
         display: flex;
         flex-direction: column;
@@ -1281,6 +1291,8 @@ body {
         margin: 180px 0;
     }
 
+    .catalog-page .products .jacket .card,
+    .catalog-page .products .boot .card,
     .catalog-page .products .bags .card,
     .catalog-page .products .shoes .card,
     .catalog-page .products .others .card {
@@ -1289,6 +1301,14 @@ body {
 
     .button-top {
         bottom: 10px;
+    }
+
+    .winter-collection img {
+        width: 96%;
+    }
+
+    .winter-collection span {
+        font-size: 20px;
     }
 
 
