@@ -385,12 +385,12 @@ body {
 }
 
 .promotion-banner:hover {
-    transform: scale3d(1.03, 1.03, 1.6);
+    transform: translateY(-10px) scale3d(1.03, 1.03, 1.6);
     box-shadow: 0 0 10px #8f8d8d;
 }
 
 .catalog-navbar {
-    width: 500px;
+    width: 600px;
     padding: 10px;
     border-radius: 10px;
     background-color: var(--color-primary);
@@ -415,7 +415,7 @@ body {
 .catalog-navbar ul li a {
     font-family: 'Urbanist', sans-serif;
     text-decoration: none;
-    transition: all 500ms;
+    transition: all 600ms;
     color: #fff;
 }
 
@@ -516,8 +516,16 @@ body {
 }
 
 .winter-collection img {
-    width: 620px;
+    width: 850px;
     margin: 200px auto 0;
+}
+
+.subtitle {
+    margin: 20px auto;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #cd590a;
 }
 
 .button-top {
@@ -870,7 +878,7 @@ body {
     top: 0;
     right: 0;
     width: 35%;
-    height: 158.7vh;
+    height: 109.8vh;
     margin-top: 120px;
     background-color: #cccccc;
     color: #000;
@@ -880,6 +888,20 @@ body {
     display: block;
     animation: 1s openShoppingCart  none ease;
     height: 80vh;
+}
+
+.shopping-cart-text {
+    opacity: 0;
+    animation: 500ms car ease;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
+}
+
+.shopping-cart-text {
+    opacity: 0;
+    animation: 500ms car ease;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
 }
 
 .shopping-cart h1 {
@@ -1086,6 +1108,16 @@ body {
 
     100% {
         width: 30%;
+    }
+}
+
+@keyframes car {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
 
