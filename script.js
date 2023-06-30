@@ -3,12 +3,12 @@ const target = document.querySelectorAll('[data-animation]');
 const animationClass = 'animation';
 
 function animationScroll() {
-    const windowTop = window.scrollY + ((window.innerHeight * 3) / 4);
+    const windowTop = window.scrollY + ((window.innerHeight * 2) / 3);
     target.forEach((e) => {
-        if (windowTop >= e.offsetTop) {
+        if ((windowTop) >= e.offsetTop) {
             e.classList.add(animationClass);
         } else {
-            e.classList.remove('animationClass');
+            e.classList.remove(animationClass);
         }
     })
 }
