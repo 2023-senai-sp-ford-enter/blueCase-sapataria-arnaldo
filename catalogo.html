@@ -32,6 +32,11 @@
                 <li>
                     <a href="login.html"><i class="fa-solid fa-user"></i></a>
                 </li>
+                <li>
+                    <button id="shopping-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </li>
                 <!-- 
                     <li>
                         <button id="theme-btn">
@@ -55,6 +60,9 @@
                 <nav class="catalog-navbar" id="navbar" data-animation="animation">
                     <ul>
                         <li>
+                            <a href="#jackets" class="button-bags btn">Jaquetas</a>
+                        </li>
+                        <li>
                             <a href="#bags" class="button-bags btn">Bolsas</a>
                         </li>
                         
@@ -65,12 +73,16 @@
                         <li>
                             <a href="#others" class="button-others">Outros</a>
                         </li>
+
+                        <li>
+                            <a href="#winter" class="button-others">Exclusivos</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
             
             <section class="products">
-                <div id="others" class="others">
+                <div id="jackets" class="jacket">
                     <div class="card">
                         <img src="img/jacpad1.jpg" loading="lazy" alt="foto da capa de celular">
 
@@ -127,6 +139,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div id="bags" class="bags">
                     <div class="card">
                         <img src="img/bags-catalog/catalog-bag-1.jpg" loading="lazy" alt="foto de bolsa">
@@ -174,7 +187,8 @@
                         <img src="img/bolpad2.jpg" loading="lazy" alt="foto de bolsa">
 
                         <div class="text-card">
-                            <p class="description-paragraph">Bolsa BoomBash</p>
+
+                          <p class="description-paragraph">Bolsa BoomBash</p>
                             <i class="fa-regular fa-heart"></i>
                         </div>
                         
@@ -248,7 +262,7 @@
                         <img src="img/capa-de-celular.webp" loading="lazy" alt="foto da capa de celular">
 
                         <div class="text-card">
-                            <p class="description-paragraph">Capas de Celular </p>
+                            <p class="description-paragraph">Capa de Celular </p>
                             <i class="fa-regular fa-heart"></i>
                         </div>
 
@@ -262,7 +276,7 @@
                         <img src="img/cinto.jpg" loading="lazy" alt="foto de cinto de couro">
 
                         <div class="text-card">
-                            <p class="description-paragraph">Cintos de couro </p>
+                            <p class="description-paragraph">Cinto de couro </p>
                             <i class="fa-regular fa-heart"></i>
                         </div>
                         
@@ -276,7 +290,7 @@
                         <img src="img/carteira.jpg" loading="lazy" alt="imagem de uma carteira de couro">
 
                         <div class="text-card">
-                            <p class="description-paragraph">Carteiras de couro </p>
+                            <p class="description-paragraph">Carteira de couro </p>
                             <i class="fa-regular fa-heart"></i>
                         </div>
                         
@@ -300,177 +314,189 @@
                         </div>
                     </div>
                 </div>
-                <div id="others" class="others">
-                    <div class="card">
-                        <img src="img/Jaqcoll1.jpg" loading="lazy" alt="foto da capa de celular">
+                
+                <section id="winter" class="winter-collection">
+                    <img src="img/catalog-banner.jpg" alt="Título da coleção de inverno">
+                    <span class="subtitle">Itens exclusivos</span>
 
-                        <div class="text-card">
-                            <p class="description-paragraph">Jaqueta Rolfs  </p>
-                            <i class="fa-regular fa-heart"></i>
+                    <div id="others" class="others">
+                        <div class="card">
+                            <img src="img/Jaqcoll1.jpg" loading="lazy" alt="foto da capa de celular">
+    
+                            <div class="text-card">
+                                <p class="description-paragraph">Jaqueta Rolfs</p>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+    
+                            <div class="shopping">
+                                <span>R$ 79,90</span>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </div>
                         </div>
-
-                        <div class="shopping">
-                            <span>R$ 1.220,00</span>
-                            <i class="fa-solid fa-cart-plus"></i>
+    
+                        <div class="card">
+                            <img src="img/jaqcoll2.jpg" loading="lazy" alt="foto de cinto de couro">
+    
+                            <div class="text-card">
+                                <p class="description-paragraph">Jaqueta SnowStar</p>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            
+                            <div class="shopping">
+                                <span>R$ 147,99</span>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <img src="img/jaqcoll3.jpg" loading="lazy" alt="imagem de uma carteira de couro">
+    
+                            <div class="text-card">
+                                <p class="description-paragraph">Jaqueta Flasher</p>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            
+                            <div class="shopping">
+                                <span>R$ 99,99</span>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <img src="img/Jaqcoll4.jpg" loading="lazy" alt="foto de uma pulseira">
+    
+                            <div class="text-card">
+                                <p class="description-paragraph">Jaqueta LowFlipper</p>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            
+                            <div class="shopping">
+                                <span>R$ 49,79</span>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="others" class="others">
+                        <div class="card">
+                            <img src="img/malcoll1.jpg" loading="lazy" alt="foto da capa de celular">
+    
+                            <div class="text-card">
+                                <p class="description-paragraph">Bolsa Haster</p>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+    
+                            <div class="shopping">
+                                <span>R$ 79,90</span>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <img src="img/malcoll2.jpg" loading="lazy" alt="foto de cinto de couro">
+    
+                            <div class="text-card">
+                                <p class="description-paragraph">Bolsa LyseBubble</p>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            
+                            <div class="shopping">
+                                <span>R$ 147,99</span>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <img src="img/luvcoll1.jpg" loading="lazy" alt="imagem de uma carteira de couro">
+    
+                            <div class="text-card">
+                                <p class="description-paragraph">Luva G.Browne</p>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            
+                            <div class="shopping">
+                                <span>R$ 99,99</span>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <img src="img/luvcoll2.jpg" loading="lazy" alt="foto de uma pulseira">
+    
+                            <div class="text-card">
+                                <p class="description-paragraph"> </p>
+                                <i class="fa-regular fa-heart"></i>
+    
+                              <p class="description-paragraph">Pulseira de couro</p>
+                                <i id="heart-icon" class="fa-regular fa-heart"></i>
+                            </div>
+                            
+                            <div class="shopping">
+                                <span>R$ 49,79</span>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="card">
-                        <img src="img/jaqcoll2.jpg" loading="lazy" alt="foto de cinto de couro">
+                    <div id="boot" class="boot">
+                        <div class="card">
+                            <img src="img/botcoll1.jpg" loading="lazy" alt="foto da capa de celular">
 
-                        <div class="text-card">
-                            <p class="description-paragraph">Jaqueta SnowStar </p>
-                            <i class="fa-regular fa-heart"></i>
+                            <div class="text-card">
+                                <p class="description-paragraph">Capa de Celular</p>
+                                <i id="heart-icon" class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="shopping">
+                                <span>R$ 79,90</span>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </div>
                         </div>
-                        
-                        <div class="shopping">
-                            <span>R$ 1.470,00</span>
-                            <i class="fa-solid fa-cart-plus"></i>
+
+                        <div class="card">
+                            <img src="img/botcoll2.jpg" loading="lazy" alt="foto de cinto de couro">
+
+                            <div class="text-card">
+                                <p class="description-paragraph">Cinto de couro</p>
+                                <i id="heart-icon" class="fa-regular fa-heart"></i>
+                            </div>
+                            
+                            <div class="shopping">
+                                <span>R$ 147,99</span>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/botcoll3.jpg" loading="lazy" alt="imagem de uma carteira de couro">
+
+                            <div class="text-card">
+                                <p class="description-paragraph">Carteira de couro</p>
+                                <i id="heart-icon" class="fa-regular fa-heart"></i>
+                            </div>
+                            
+                            <div class="shopping">
+                                <span>R$ 99,99</span>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/botcoll4.jpg" loading="lazy" alt="foto de uma pulseira">
+
+                            <div class="text-card">
+                                <p class="description-paragraph">Pulseira de couro</p>
+                                <i id="heart-icon" class="fa-regular fa-heart"></i>
+                            </div>
+                            
+                            <div class="shopping">
+                                <span>R$ 49,79</span>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <img src="img/jaqcoll3.jpg" loading="lazy" alt="imagem de uma carteira de couro">
-
-                        <div class="text-card">
-                            <p class="description-paragraph">Jaqueta Flasher </p>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                        
-                        <div class="shopping">
-                            <span>R$ 999,99</span>
-                            <i class="fa-solid fa-cart-plus"></i>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="img/Jaqcoll4.jpg" loading="lazy" alt="foto de uma pulseira">
-
-                        <div class="text-card">
-                            <p class="description-paragraph">Jaqueta LowFlipper </p>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                        
-                        <div class="shopping">
-                            <span>R$ 849,79</span>
-                            <i class="fa-solid fa-cart-plus"></i>
-                        </div>
-                    </div>
-                </div>
-                <div id="others" class="others">
-                    <div class="card">
-                        <img src="img/malcoll1.jpg" loading="lazy" alt="foto da capa de celular">
-
-                        <div class="text-card">
-                            <p class="description-paragraph">Bolsa Haster </p>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-
-                        <div class="shopping">
-                            <span>R$ 779,90</span>
-                            <i class="fa-solid fa-cart-plus"></i>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="img/malcoll2.jpg" loading="lazy" alt="foto de cinto de couro">
-
-                        <div class="text-card">
-                            <p class="description-paragraph">Bolsa LyseBubble </p>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                        
-                        <div class="shopping">
-                            <span>R$ 749,99</span>
-                            <i class="fa-solid fa-cart-plus"></i>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="img/luvcoll1.jpg" loading="lazy" alt="imagem de uma carteira de couro">
-
-                        <div class="text-card">
-                            <p class="description-paragraph">Luva G.Browne </p>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                        
-                        <div class="shopping">
-                            <span>R$ 199,99</span>
-                            <i class="fa-solid fa-cart-plus"></i>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="img/luvcoll2.jpg" loading="lazy" alt="foto de uma pulseira">
-
-                        <div class="text-card">
-                            <p class="description-paragraph">Luva M.Phirson </p>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                        
-                        <div class="shopping">
-                            <span>R$ 199,99</span>
-                            <i class="fa-solid fa-cart-plus"></i>
-                        </div>
-                    </div>
-                </div>
-                <div id="others" class="others">
-                    <div class="card">
-                        <img src="img/botcoll1.jpg" loading="lazy" alt="foto da capa de celular">
-
-                        <div class="text-card">
-                            <p class="description-paragraph">Bota SnowVille </p>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-
-                        <div class="shopping">
-                            <span>R$ 979,90</span>
-                            <i class="fa-solid fa-cart-plus"></i>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="img/botcoll2.jpg" loading="lazy" alt="foto de cinto de couro">
-
-                        <div class="text-card">
-                            <p class="description-paragraph">Bota Farmer </p>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                        
-                        <div class="shopping">
-                            <span>R$ 1.047,99</span>
-                            <i class="fa-solid fa-cart-plus"></i>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="img/botcoll3.jpg" loading="lazy" alt="imagem de uma carteira de couro">
-
-                        <div class="text-card">
-                            <p class="description-paragraph">Bota Privative</p>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                        
-                        <div class="shopping">
-                            <span>R$ 1.099,99</span>
-                            <i class="fa-solid fa-cart-plus"></i>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="img/botcoll4.jpg" loading="lazy" alt="foto de uma pulseira">
-
-                        <div class="text-card">
-                            <p class="description-paragraph">Bota Court </p>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                        
-                        <div class="shopping">
-                            <span>R$ 1.049,79</span>
-                            <i class="fa-solid fa-cart-plus"></i>
-                        </div>
-                    </div>
-                </div>
+                </section>
+            </section>
         </section>
         
         <button class="button-top" id="btn-top" data-animation="btn">
@@ -478,6 +504,19 @@
                 <i class="fa-solid fa-arrow-up"></i>
             </a>
         </button>
+
+        <section class="shopping-cart">
+            <div class="shopping-cart-text">
+                <h1>Carrinho</h1>
+                <h2>Seu carrinho esta vazio</h2>
+
+                <p>Clique aqui e conheça os nossos produtos!</p>
+
+                <button class="shopping-cart-btn">
+                    <a href="catalogo.html">Conheca as novidades</a>
+                </button>
+            </div>
+        </section>
     </main>
 
     <footer class="footer-page">
