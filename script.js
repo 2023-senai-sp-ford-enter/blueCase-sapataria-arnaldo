@@ -23,17 +23,6 @@ document.addEventListener('scroll', () => {
     const currentTheme = localStorage.getItem('data-theme') ? localStorage.getItem('data-theme') : '';
     const rootElement = document.documentElement;
     rootElement.setAttribute('data-theme', rootElement)
-
-
-function animationScroll() {
-    const windowTop = window.scrollY + ((window.innerHeight * 3) / 4);
-    target.forEach((e) => {
-        if (windowTop >= e.offsetTop) {
-            e.classList.add(animationClass);
-        } else {
-            e.classList.remove('animationClass');
-        }
-    })
 */
 
 // Função para abrir e fechar o menu
