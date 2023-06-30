@@ -1150,31 +1150,70 @@ body {
     .header {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         width: 100%;
     }
 
     .header .header-title {
-        margin: 50px 0 30px 0;
+        position: absolute;
+        top: 50px;
+        left: -40px;
         font-size: 25px;
     }
 
-    .header .navbar {
-        width: 100%;
-        margin: 0;
-        background-color: var(--color-secundary);
+    .menu-btn {
+        display: block;
+        position: absolute;
+        top: 52px;
+        right: 30px;
+        border-top: 2px solid ;
+        width: 20px;
+        color: #FFF;
+    }
+
+    .menu-btn::before,
+    .menu-btn::after {
+        display: block;
+        content: '';
+        width: 20px;
+        height: 2px;
+        margin-top: 5px;
+        background-color: currentColor;
+    }
+
+    .menu-btn::after.active-menu {
+        transform: rotate(60deg);
+    }
+
+    .navbar.active-menu {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #cccccc;
     }
     
     .header .navbar ul {
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
+        position: absolute;
+        left: 30px;
         width: 100%;
-        padding: 20px 0 28px 0;
+        padding: 40px 0 0 0;
     }
     
-    .header .navbar ul li a {
-        font-size: 18px;
-        color: #FFF;
+    .header .navbar ul li {
+        margin-bottom: 30px;
+    }
+    
+    .navbar ul li a {
+        font-size: 25px;
+        color: var(--color-primary);
     }
 
 
@@ -1190,20 +1229,17 @@ body {
 
     .philosophy-section .philosophy-text {
         width: 85%;
-        margin: 80px 0 604px 0;
+        margin: 10px 0 350px 0;
     }
 
     .philosophy-about {
-       width:  90%;
+       width: 90%;
     }
 
     .gallery img {
         width: 300px;
         height: 400px;
-    }
-
-    .philosophy-section-main .banner-ctlg {
-        margin-top: 28px;
+        margin-bottom: -10px;
     }
 
     .philosophy-section .gallery {

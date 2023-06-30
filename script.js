@@ -35,6 +35,15 @@ buttonShoppingCart.addEventListener('click', () => {
   menuShoppingCart.classList.toggle('active');
 });
 
+const menuBtn = document.querySelector('.menu-btn');
+
+menuBtn.addEventListener('click', () => {
+  const navbar = document.querySelector('.navbar');
+
+  navbar.classList.toggle('active-menu');
+  menuBtn.classList.toggle('active-menu');
+});
+
 //Função para adicionar animação
 
 const heartIcon = document.querySelectorAll('#heart-icon');
