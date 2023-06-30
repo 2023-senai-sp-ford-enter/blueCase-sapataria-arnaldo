@@ -385,12 +385,12 @@ body {
 }
 
 .promotion-banner:hover {
-    transform: scale3d(1.03, 1.03, 1.6);
+    transform: translateY(-10px) scale3d(1.03, 1.03, 1.6);
     box-shadow: 0 0 10px #8f8d8d;
 }
 
 .catalog-navbar {
-    width: 500px;
+    width: 600px;
     padding: 10px;
     border-radius: 10px;
     background-color: var(--color-primary);
@@ -415,7 +415,7 @@ body {
 .catalog-navbar ul li a {
     font-family: 'Urbanist', sans-serif;
     text-decoration: none;
-    transition: all 500ms;
+    transition: all 600ms;
     color: #fff;
 }
 
@@ -515,9 +515,25 @@ body {
     flex-direction: column;
 }
 
+.detail {
+    position: relative;
+    top: 245px;
+    left: 805px;
+    font-size: 70px;
+    color: var(--color-secundary);
+}
+
 .winter-collection img {
-    width: 620px;
+    width: 850px;
     margin: 200px auto 0;
+}
+
+.subtitle {
+    margin: 20px auto;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #cd590a;
 }
 
 .button-top {
@@ -734,7 +750,7 @@ body {
     margin-top: 55px;
     border: none;
     border-radius: 5px;
-    font: 18px bold;
+    font-size: 20px;
     transition: all 600ms;
     cursor: pointer;
     background-color: #cd590a;
@@ -870,7 +886,7 @@ body {
     top: 0;
     right: 0;
     width: 30%;
-    height: 158.7vh;
+    height: 109.8vh;
     margin-top: 120px;
     background-color: #cccccc;
     color: #000;
@@ -879,6 +895,13 @@ body {
 .shopping-cart.active {
     display: block;
     animation: 1s openShoppingCart  none ease;
+}
+
+.shopping-cart-text {
+    opacity: 0;
+    animation: 600ms car ease;
+    animation-delay: 600ms;
+    animation-fill-mode: forwards;
 }
 
 .shopping-cart h1 {
@@ -895,8 +918,8 @@ body {
 .shopping-cart h2 {
     display: flex;
     justify-content: center;
-    margin-top: 50%;
-    font-size: 2rem;
+    margin-top: 40%;
+    font-size: 2.6rem;
     color: #494848;
 }
 
@@ -904,6 +927,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 60%;
+    font-size: 1.4rem;
     color: #7e7d7d;
 }
 
@@ -911,7 +935,7 @@ body {
     display: block;
     width: 215px;
     height: 40px;
-    margin: 80px auto;
+    margin: 30px auto;
     border: none;
     border-radius: 6px;
     background-color: var(--color-primary);
@@ -1083,6 +1107,16 @@ body {
 
     100% {
         width: 30%;
+    }
+}
+
+@keyframes car {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
 
