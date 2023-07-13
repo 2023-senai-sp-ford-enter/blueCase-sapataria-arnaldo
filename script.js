@@ -35,10 +35,42 @@ buttonShoppingCart.addEventListener('click', () => {
   menuShoppingCart.classList.toggle('active');
 });
 
-//Função para adicionar animação
+export function getProdutos() {
+  fetch('http://localhost:3000/produtos', {
+    method: 'GET',
+    headers: {
+      'Content-type': 'application/json'
+    }
+  })
+    .then(res => res.json())
+    .then(res => {
 
-const heartIcon = document.querySelectorAll('#heart-icon');
+      const listProdutos = document.querySelector('#listaProdutos');
+      listProdutos.innerHTML = "";
+      
+      for(let i = 0; i < res.length; i++) {
+        const ulProdutos = document.createElement('ul');
+        ulProdutos.classList.add('produtos');
 
-heartIcon.addEventListener('click', () => {
-  heartIcon.classList.toggle('active-heart');
-});
+        let liImg = document.createElement('li');
+        liImg.setAttribute('src', `${res[i].img}`);
+        liId.setAttribute('data-product', 'img');
+
+        let liId = document.createElement('li');
+        liId.innerHTML = res[i].id;
+        liId.setAttribute('data-product', 'id');
+
+        let liDescription = document.createElement('li');
+        liDescription.innerHTML= res[i].descricao;
+        liDescription.setAttribute('data-product', 'description');
+
+        let liPreco = document.createElement('li');
+        liPreco.innerHTML = res[i].preco;
+        liPreco.setAttribute('data-product', 'preco');
+
+        ulProdutos.append(liImg(document.createElement('img')), liId, liDescription, liPreco);
+      } 
+
+      listProdutos.appendChild(ulProdutos);
+    });
+}

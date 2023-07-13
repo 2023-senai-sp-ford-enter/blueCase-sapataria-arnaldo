@@ -489,14 +489,6 @@ body {
     margin-top: 10px;
 }
 
-.jacket .card .text-card i.active-heart,
-.bags .card .text-card i.active-heart,
-.shoes .card .text-card i.active-heart,
-.others .card .text-card i.active-heart,
-.boot .card .text-card i.active-heart {
-    animation: 1s heartAnimation ease;
-}
-
 .jacket .card .shopping,
 .bags .card .shopping,
 .shoes .card .shopping,
@@ -506,6 +498,7 @@ body {
     justify-content: space-between;
     padding: 10px;
     border-radius: 0 0 10px 10px;
+    cursor: pointer;
     background-color: var(--color-primary);
     color: #fff;
 }
